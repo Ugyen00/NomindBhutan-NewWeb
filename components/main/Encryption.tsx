@@ -35,7 +35,7 @@ const Encryption = () => {
             src="/LockMain.png"
             alt="Lock Main"
             width={70}
-            height={70}
+            height={80}
             className=" z-10"
           />
         </div>
