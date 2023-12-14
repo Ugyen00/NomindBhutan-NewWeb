@@ -80,7 +80,7 @@ const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.1)}
-        className="w-[550px] h-[550px] flex justify-center items-center ml-12 pr-12 pb-8"
+        className="w-[550px] h-[550px] flex justify-center items-center ml-12 pr-12 pb-24"
       >
         <Canvas
           dpr={[1, 2]}
