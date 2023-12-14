@@ -7,15 +7,15 @@ interface Props {
   description: string;
 }
 
-const ProjectCard = ({ src, title, description }: Props) => {
+const Bots = ({ src, title, description }: Props) => {
   return (
     <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
       <Image
         src={src}
         alt={title}
-        width={1000}
-        height={1000}
-        className="w-full object-contain"
+        width={400}
+        height={150}
+        className=" object-contain"
       />
 
       <div className="relative p-4">
@@ -26,4 +26,4 @@ const ProjectCard = ({ src, title, description }: Props) => {
   );
 };
 
-export default ProjectCard;
+export default Bots;

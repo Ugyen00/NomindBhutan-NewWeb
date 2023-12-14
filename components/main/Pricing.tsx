@@ -5,9 +5,12 @@ import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import Image from "next/image";
 
-const Encryption = () => {
+const Pricing = () => {
   return (
-    <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full">
+    <div
+      className="flex flex-row relative items-center justify-center min-h-screen w-full h-full"
+      id="pricing"
+    >
       <div className="absolute w-auto h-auto top-0 z-[5]">
         <motion.div
           variants={slideInFromTop}
@@ -65,4 +68,4 @@ const Encryption = () => {
   );
 };
 
-export default Encryption;
+export default Pricing;
