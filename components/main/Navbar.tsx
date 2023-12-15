@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a href="#home" className="h-auto w-auto flex flex-row items-center">
+        <Link href="#home" className="h-auto w-auto flex flex-row items-center">
           <Image
             src="/NavLogo.png"
             alt="logo"
@@ -13,7 +14,7 @@ const Navbar = () => {
             height={110}
             className="cursor-pointer hover:animate-slowspin"
           />
-        </a>
+        </Link>
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-30">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] backdrop-blur-lg backdrop-filter bg-opacity-70 mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
