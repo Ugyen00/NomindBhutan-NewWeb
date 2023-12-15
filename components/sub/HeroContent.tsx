@@ -81,11 +81,7 @@ const HeroContent = () => {
         <Canvas
           dpr={[1, 2]}
           shadows
-<<<<<<< HEAD
-          camera={{ fov: 45 }}
-=======
           camera={{ fov: 10 }}
->>>>>>> 6372e29c2c174a25d154cc92e8b17a594c3d720e
           style={{ position: "absolute" }}
         >
           <PresentationControls
