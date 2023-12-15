@@ -81,7 +81,7 @@ const HeroContent = () => {
         <Canvas
           dpr={[1, 2]}
           camera={{ fov: 10 }}
-          style={{ position: "absolute" }}
+          style={{ position: "absolute", height: 550, width: 550 }}
         >
           <PresentationControls
             speed={1.5}
