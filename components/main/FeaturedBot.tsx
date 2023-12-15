@@ -16,6 +16,12 @@ const FeaturedBot = () => {
             src="/NdiBot.svg"
             title="National Digital Identity"
             description="Empowering the nation with seamless access, our integrated chatbot revolutionizes National Digital Identity, enhancing citizen services for effortless interactions and support."
+            width={400}
+            height={400}
+            imageStyles={{
+              padding: "20px",
+              paddingBottom: "1px",
+            }}
           />
         </div>
 
@@ -24,6 +30,13 @@ const FeaturedBot = () => {
             src="/NlcsBot.svg"
             title="National Land Commission"
             description="Empowering National Land Commission, our integrated chatbot streamlines inquiries, offers instant assistance, and enhances efficiency in land-related processes."
+            width={400}
+            height={500}
+            imageStyles={{
+              padding: "16px",
+              marginTop: "35px",
+              paddingBottom: "2px",
+            }}
           />
         </div>
 
@@ -32,6 +45,15 @@ const FeaturedBot = () => {
             src="/BnbBot.svg"
             title="Bhutan National Bank"
             description="Revolutionizing banking, our integrated chatbot at Bank of Bhutan delivers instant assistance, streamlines transactions, and enhances customer service seamlessly."
+            width={300}
+            height={300}
+            imageStyles={{
+              padding: "20px",
+              paddingBottom: "20px",
+              marginLeft: "40px",
+              marginBottom: "18px",
+              marginTop: "20px",
+            }}
           />
         </div>
       </div>

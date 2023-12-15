@@ -8,7 +8,6 @@ import {
   slideInFromTop,
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
 
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
