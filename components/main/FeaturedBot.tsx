@@ -4,7 +4,7 @@ import Bots from "../sub/Bots";
 const FeaturedBot = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center py-20 z-50"
+      className="flex flex-col items-center justify-center py-20 z-30"
       id="featuredbot"
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-16">
