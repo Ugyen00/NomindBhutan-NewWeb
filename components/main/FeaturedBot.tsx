@@ -10,7 +10,7 @@ const FeaturedBot = () => {
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-16">
         Featured Bots
       </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+      <div className="h-full w-full flex flex-col md:flex-row justify-center gap-10 px-10">
         <div className="text-center">
           <Bots
             src="/NdiBot.svg"
@@ -30,6 +30,7 @@ const FeaturedBot = () => {
               width: "370px",
               height: "450px",
             }}
+            sectionId="ndi-section"
           />
         </div>
 
@@ -54,6 +55,7 @@ const FeaturedBot = () => {
               width: "370px",
               height: "450px",
             }}
+            sectionId="nlcs-section"
           />
         </div>
 
@@ -79,6 +81,7 @@ const FeaturedBot = () => {
               width: "370px",
               height: "450px",
             }}
+            sectionId="bnb-section"
           />
         </div>
       </div>

@@ -12,6 +12,7 @@ interface Props {
   imageStyles?: React.CSSProperties;
   buttonStyles?: React.CSSProperties;
   cardStyles?: React.CSSProperties;
+  sectionId?: string;
 }
 
 const Bots = ({
@@ -23,6 +24,7 @@ const Bots = ({
   imageStyles,
   buttonStyles,
   cardStyles,
+  sectionId,
 }: Props) => {
   return (
     <div
@@ -41,10 +43,10 @@ const Bots = ({
       <div className="relative p-4">
         <h1 className="text-2xl font-semibold text-white">{title}</h1>
         <p className="mt-2 text-gray-300">{description}</p>
-        <a href="#about-me" className="cursor-pointer">
+        <a href={`#${sectionId}`} className="cursor-pointer">
           <motion.div
             variants={slideInFromTop}
-            className="Welcome-box py-[8px] px-[8px] border border-[#7042f88b] opacity-[0.9]"
+            className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
             style={buttonStyles}
           >
             <h1 className="Welcome-text text-[13px]">TRY NOW</h1>
