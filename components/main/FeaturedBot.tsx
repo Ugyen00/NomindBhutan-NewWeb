@@ -7,7 +7,7 @@ const FeaturedBot = () => {
       className="flex flex-col items-center justify-center py-20"
       id="featuredbot"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-16">
         Featured Bots
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
@@ -17,10 +17,18 @@ const FeaturedBot = () => {
             title="National Digital Identity"
             description="Empowering the nation with seamless access, our integrated chatbot revolutionizes National Digital Identity, enhancing citizen services for effortless interactions and support."
             width={400}
-            height={400}
+            height={300}
             imageStyles={{
               padding: "20px",
               paddingBottom: "1px",
+            }}
+            buttonStyles={{
+              marginLeft: "120px",
+              marginTop: "10px",
+            }}
+            cardStyles={{
+              width: "370px",
+              height: "450px",
             }}
           />
         </div>
@@ -31,11 +39,20 @@ const FeaturedBot = () => {
             title="National Land Commission"
             description="Empowering National Land Commission, our integrated chatbot streamlines inquiries, offers instant assistance, and enhances efficiency in land-related processes."
             width={400}
-            height={500}
+            height={300}
             imageStyles={{
               padding: "16px",
-              marginTop: "35px",
+              marginTop: "20px",
+              marginBottom: "10px",
               paddingBottom: "2px",
+            }}
+            buttonStyles={{
+              marginLeft: "120px",
+              marginTop: "24px",
+            }}
+            cardStyles={{
+              width: "370px",
+              height: "450px",
             }}
           />
         </div>
@@ -53,6 +70,14 @@ const FeaturedBot = () => {
               marginLeft: "40px",
               marginBottom: "18px",
               marginTop: "20px",
+            }}
+            buttonStyles={{
+              marginLeft: "120px",
+              marginTop: "25px",
+            }}
+            cardStyles={{
+              width: "370px",
+              height: "450px",
             }}
           />
         </div>
