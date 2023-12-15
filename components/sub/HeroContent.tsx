@@ -28,8 +28,6 @@ function Model(props: any) {
       <primitive object={scene} {...props} />
       {hovered && (
         <mesh>
-          {/* Your hover effect elements or changes go here */}
-          {/* For example, change the color of the model */}
           <meshBasicMaterial color="red" />
         </mesh>
       )}
@@ -76,15 +74,18 @@ const HeroContent = () => {
           </motion.div>
         </a>
       </div>
-
       <motion.div
         variants={slideInFromRight(0.1)}
-        className="w-[550px] h-[550px] flex justify-center items-center ml-12 pr-12 pb-24"
+        className="w-[550px] h-[550px] flex justify-center items-center ml-12 pr-16 pb-28"
       >
         <Canvas
           dpr={[1, 2]}
           shadows
+<<<<<<< HEAD
           camera={{ fov: 45 }}
+=======
+          camera={{ fov: 10 }}
+>>>>>>> 6372e29c2c174a25d154cc92e8b17a594c3d720e
           style={{ position: "absolute" }}
         >
           <PresentationControls
