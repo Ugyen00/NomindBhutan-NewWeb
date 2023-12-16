@@ -20,7 +20,7 @@ const Pricing = () => {
         <div className="absolute w-auto h-auto top-0 z-[5]">
           <motion.div
             variants={slideInFromTop}
-            className="text-[40px] font-medium text-center text-gray-200"
+            className="text-[40px] font-bold text-center text-gray-200"
           >
             Simple and Transparent
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -176,7 +176,7 @@ const Pricing = () => {
         </div>
       </div>
       <div className="z-[30] px-[5px]">
-        <h1 className="text-[40px] font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+        <h1 className="text-[35px] font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           ADD ONs
         </h1>
 
