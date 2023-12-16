@@ -33,7 +33,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="h-auto w-auto flex flex-row items-center">
-          <button className="flex items-center justify-between w-full h-auto mr-[10px] px-[20px] py-[10px] rounded-full text-gray-200">
+          <button className="flex items-center justify-between w-full h-auto ml-2 px-2 py-[10px] rounded-full text-gray-200">
             Dashboard
             <Image
               src="/arrow.svg"
