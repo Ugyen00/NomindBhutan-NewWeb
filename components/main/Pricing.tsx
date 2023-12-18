@@ -25,9 +25,9 @@ const Pricing = () => {
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
-                Pricing{" "}
+                PRICING{" "}
               </span>
-              Plans
+              PLANS
             </motion.div>
             <motion.div
               variants={slideInFromTop}
@@ -68,6 +68,7 @@ const Pricing = () => {
               {/* Monthly Plans */}
               <Cards
                 title="Basic Plan"
+                time="per month"
                 description="For small businesses with big ambitions"
                 features={[
                   "1000 messages per month ",
@@ -76,10 +77,10 @@ const Pricing = () => {
                   "View conversation",
                   "Live chat",
                 ]}
-                price="Nu.1500 per month"
+                price="Nu.1500"
                 cardStyles={{
                   width: "400px",
-                  height: "550px",
+                  height: "600px",
                 }}
                 buttonStyles={{
                   marginTop: "120px",
@@ -87,6 +88,7 @@ const Pricing = () => {
               />
               <Cards
                 title="Enterprise Plan"
+                time="per month"
                 description="For serious businesses who want to scale"
                 features={[
                   "1000 messages per month ",
@@ -98,23 +100,24 @@ const Pricing = () => {
                   "Insights/Analytics monthly",
                   "Chatbot interface options",
                 ]}
-                price="Nu.8000 per month"
+                price="Nu.8000"
                 cardStyles={{
                   width: "400px",
-                  height: "550px",
+                  height: "600px",
                 }}
               />
               <Cards
                 title="Custom Plan"
-                description="For those who are striving for global success"
+                time=" "
+                description="For those who are striving for global success"
                 features={["Custom number of messages", "Custom chatbots"]}
                 price="Contact Us for more information"
                 cardStyles={{
                   width: "400px",
-                  height: "550px",
+                  height: "600px",
                 }}
                 buttonStyles={{
-                  marginTop: "238px",
+                  marginTop: "270px",
                 }}
               />
             </>
@@ -123,6 +126,7 @@ const Pricing = () => {
               {/* Yearly Plans */}
               <Cards
                 title="Basic Plan"
+                time="per year"
                 description="For small businesses with big ambitions"
                 features={[
                   "1000 messages per month ",
@@ -131,10 +135,10 @@ const Pricing = () => {
                   "View conversation",
                   "Live chat",
                 ]}
-                price="Nu.16,500 per year"
+                price="Nu.16,500"
                 cardStyles={{
                   width: "400px",
-                  height: "550px",
+                  height: "600px",
                 }}
                 buttonStyles={{
                   marginTop: "120px",
@@ -142,6 +146,7 @@ const Pricing = () => {
               />
               <Cards
                 title="Enterprise Plan"
+                time="per year"
                 description="For serious businesses who want to scale"
                 features={[
                   "1000 messages per month ",
@@ -153,24 +158,25 @@ const Pricing = () => {
                   "Insights/Analytics monthly",
                   "Chatbot interface options",
                 ]}
-                price="Nu.88,000 per year"
+                price="Nu.88,000"
                 cardStyles={{
                   width: "400px",
-                  height: "550px",
+                  height: "600px",
                 }}
               />
 
               <Cards
                 title="Custom Plan"
-                description="For those who are striving for global success"
+                time=" "
+                description="For those who are striving for global success"
                 features={["Custom number of messages", "Custom chatbots"]}
                 price="Contact Us for more information"
                 cardStyles={{
                   width: "400px",
-                  height: "550px",
+                  height: "600px",
                 }}
                 buttonStyles={{
-                  marginTop: "238px",
+                  marginTop: "270px",
                 }}
               />
             </>
@@ -178,9 +184,16 @@ const Pricing = () => {
         </div>
       </div>
       <div className="z-[30] px-[5px]">
-        <h1 className="text-[35px] font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-          ADD ONs
-        </h1>
+        <motion.div
+          variants={slideInFromTop}
+          className="text-[35px] font-semibold text-center text-gray-200"
+        >
+          <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            {" "}
+            ADD{" "}
+          </span>
+          ONs
+        </motion.div>
 
         <div className="h-full w-full flex flex-col md:flex-row justify-center gap-10 px-10 mt-8">
           <div

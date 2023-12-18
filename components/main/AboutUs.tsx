@@ -9,23 +9,31 @@ const AboutUs = () => {
   return (
     <>
       <div id="aboutus">
-        <h1 className="text-[40px] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-16">
-          About Us
-        </h1>
+        <motion.div
+          variants={slideInFromTop}
+          className="text-[40px] font-bold text-center text-gray-200 py-16"
+        >
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            {" "}
+            ABOUT{" "}
+          </span>
+          US
+        </motion.div>
         <div className="flex items-center justify-center">
-          <Image src="/team.jpg" alt="team" width={700} height={500} />
-          <p className="text-[20px] text-gray-200 ml-16">
-            Embarking on a journey of innovation with
-            <br />
-            <br /> NoMindBhutan, where brilliance meets Bhutanese
-            <br />
-            <br /> tranquility, crafting AI-driven solutions
-            <br />
-            <br />
+          <Image
+            src="/team.jpg"
+            alt="team"
+            width={700}
+            height={500}
+            className="ml-16"
+          />
+          <p className="text-[20px] text-gray-200 p-32">
+            Embarking on a journey of innovation with NoMindBhutan, where
+            brilliance meets Bhutanese tranquility, crafting AI-driven solutions
             for a global paradigm.
           </p>
         </div>
-        <div className="flex items-center text-white justify-center">
+        <div className="flex items-center text-white justify-center mt-16">
           <CountUpAnimation targetCount={4} label="Clients" />
           <div className="mx-4" />
           <CountUpAnimation targetCount={7} label="Employee" />
@@ -38,10 +46,10 @@ const AboutUs = () => {
               variants={slideInFromTop}
               className="text-[35px] font-bold text-center text-gray-200 mb-8"
             >
-              Meet Our
+              MEET OUR
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
-                Pulse{" "}
+                PULSE{" "}
               </span>
             </motion.div>
 

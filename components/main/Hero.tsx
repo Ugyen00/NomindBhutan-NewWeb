@@ -36,9 +36,9 @@ const Hero = () => {
         >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             {" "}
-            Trusted{" "}
+            TRUSTED{" "}
           </span>
-          By
+          BY
         </motion.div>
         <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
           {logos.map((image, index) => (

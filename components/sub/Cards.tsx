@@ -7,6 +7,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 interface Props {
   title: string;
+  time: string;
   description: string;
   features: string[];
   price: string;
@@ -16,6 +17,7 @@ interface Props {
 
 const Cards = ({
   title,
+  time,
   description,
   features,
   price,
@@ -38,6 +40,7 @@ const Cards = ({
             <span className="text-2xl font-bold">{decimalPart}</span>
           )}{" "}
         </p>
+        <p className="mt-4 text-white text-center">{time}</p>
 
         <p className="mt-2 text-gray-300 text-center">{description}</p>
 

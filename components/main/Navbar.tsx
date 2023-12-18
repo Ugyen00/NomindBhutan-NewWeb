@@ -21,17 +21,21 @@ const Navbar = () => {
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-30">
           <div className="flex items-center justify-between w-full h-auto mr-[15px] px-[20px] py-[10px] text-gray-200">
-            <a href="/#services" className="cursor-pointer">
+            <a href="/#services" className="cursor-pointer relative group">
               Services
+              <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
-            <a href="/#pricing" className="cursor-pointer">
+            <a href="/#pricing" className="cursor-pointer relative group">
               Pricing
+              <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
-            <a href="/#aboutus" className="cursor-pointer">
+            <a href="/#aboutus" className="cursor-pointer relative group">
               About Us
+              <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
-            <a href="/#featuredbot" className="cursor-pointer">
+            <a href="/#featuredbot" className="cursor-pointer relative group">
               Featured Bot
+              <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
           </div>
         </div>

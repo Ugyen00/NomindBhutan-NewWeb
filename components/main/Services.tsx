@@ -7,12 +7,17 @@ import Image from "next/image";
 const Services = () => {
   return (
     <>
-      <h1
+      <motion.div
         id="services"
-        className="text-[40px] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-8 pt-16"
+        variants={slideInFromTop}
+        className="text-[40px] font-bold text-center text-gray-200 py-8 pt-16"
       >
-        Services Offered
-      </h1>
+        SERVICES
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          {" "}
+          OFFERED{" "}
+        </span>
+      </motion.div>
 
       <div className="relative min-h-screen w-full h-full z-30">
         <div className="text-white flex items-center justify-center ml-8 mb-32">

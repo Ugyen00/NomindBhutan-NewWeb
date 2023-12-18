@@ -59,21 +59,28 @@ const Footer = () => {
           <div className="pt-[8px]  pl-[130px] text-[18px] ml-[180px]">
             <p className="font-semibold mb-2">Quick Links</p>
             <ul className="font-light">
-              <li>Privacy Policy</li>
-              <li>Terms of Use</li>
+              <li className="cursor-pointer relative group mb-2">
+                Privacy Policy{" "}
+                <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+              </li>
+              <li className="cursor-pointer relative group">
+                Terms of Use{" "}
+                <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+              </li>
             </ul>
           </div>
           <div className="pt-[6px] pl-[149px] text-[18px] ml-[170px]">
             <p className="font-semibold mb-2">Contact Us</p>
             <ul className="font-light">
-              <li>
+              <li className="mb-2">
                 <FaPhoneAlt className="inline-block mr-2" /> +975 77738943
               </li>
-              <li>
+              <li className="cursor-pointer relative group mb-2">
                 <FaEnvelope className="inline-block mr-2" />{" "}
                 nomindbhutan@gmail.com
+                <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
               </li>
-              <li>
+              <li className="mb-2">
                 <FaMapMarkerAlt className="inline-block mr-2" /> Thimphu,
                 Kabesa, Bhutan
               </li>
