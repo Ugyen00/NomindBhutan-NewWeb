@@ -26,11 +26,11 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="flex items-center text-white justify-center">
-          <CountUpAnimation targetCount={3} label="Clients" />
+          <CountUpAnimation targetCount={4} label="Clients" />
           <div className="mx-4" />
-          <CountUpAnimation targetCount={7} label="Members" />
+          <CountUpAnimation targetCount={7} label="Employee" />
           <div className="mx-4" />
-          <CountUpAnimation targetCount={4} label="Chatbots" />
+          <CountUpAnimation targetCount={4} label="Project Completed" />
         </div>
         <div>
           <div className="pt-32">
@@ -68,7 +68,7 @@ const AboutUs = () => {
                 />
                 <p className="font-sans text-[16px] pl-8">Tsheltrim Pemo</p>
                 <p className="font-sans text-[16px] text-gray-400 pl-8">
-                  Head of Growth
+                  Head of Product
                 </p>
               </div>
               <div>

@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
+import { SparklesIcon } from "@heroicons/react/20/solid";
 
 const Contact = () => {
   return (
@@ -29,7 +30,7 @@ const Contact = () => {
           <form method="post" action="#">
             <div className="mb-8">
               <input
-                className="mt-1 p-2 border-b border-white w-[500px]"
+                className="mt-1 p-2 w-[500px] rounded-[10px] border-b border-[#7042f861]"
                 type="text"
                 placeholder="Your Name"
               />
@@ -37,7 +38,7 @@ const Contact = () => {
 
             <div className="mb-8">
               <input
-                className="mt-1 p-2 border-b border-white w-[500px]"
+                className="mt-1 p-2 border-b w-[500px] rounded-[10px] border-[#7042f861]"
                 name="email"
                 id="email"
                 type="email"
@@ -47,26 +48,33 @@ const Contact = () => {
 
             <div className="mb-8">
               <textarea
-                className="mt-1 p-2 border-b border-white w-[500px]"
+                className="mt-1 p-2 w-[500px] rounded-[10px] border-b border-[#7042f861]"
                 rows={3}
                 name="bio"
                 id="bio"
                 placeholder="Share Your Thoughts"
               ></textarea>
             </div>
-            <div className="font-light mb-8 z-10">
+            <div className="font-light mb-5 z-10">
               <a className="cursor-pointer flex pt-8 ">
                 <motion.div
                   variants={slideInFromTop}
-                  className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
+                  className="Welcome-box py-[10px] px-[20px] border border-[#7042f88b] opacity-[0.9]"
                 >
+                  <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
                   <h1 className="Welcome-text text-[16px]">Submit</h1>
                 </motion.div>
               </a>
             </div>
           </form>
           <div className="pl-64 pb-16">
-            <Image src="location.svg" alt="team" width={400} height={200} />
+            <Image
+              src="location.svg"
+              alt="team"
+              width={400}
+              height={200}
+              className="rounded-[10px]"
+            />
           </div>
         </div>
       </div>
