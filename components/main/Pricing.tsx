@@ -18,28 +18,31 @@ const Pricing = () => {
         id="pricing"
       >
         <div className="absolute top-0 z-[5]">
-          <motion.div
-            variants={slideInFromTop}
-            className="text-[40px] font-bold text-center text-gray-200"
-          >
-            Simple and Transparent
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}
-              Pricing{" "}
-            </span>
-            Plans
-          </motion.div>
-          <motion.div
-            variants={slideInFromTop}
-            className="text-[20px] font-medium text-center text-gray-200 mt-4"
-          >
-            Get a month for
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}
-              FREE{" "}
-            </span>
-            by subscribing yearly!
-          </motion.div>
+          <div className="mt-16">
+            <motion.div
+              variants={slideInFromTop}
+              className="text-[40px] font-bold text-center text-gray-200"
+            >
+              Simple and Transparent
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                {" "}
+                Pricing{" "}
+              </span>
+              Plans
+            </motion.div>
+            <motion.div
+              variants={slideInFromTop}
+              className="text-[20px] font-medium text-center text-gray-200 mt-4"
+            >
+              Get a month for
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                {" "}
+                FREE{" "}
+              </span>
+              by subscribing yearly!
+            </motion.div>
+          </div>
+
           <div className="mt-8 flex items-center justify-center">
             <button
               onClick={handleToggle}
@@ -60,7 +63,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="h-full w-full flex flex-col md:flex-row justify-center gap-10 px-10 mt-32">
+        <div className="h-full w-full flex flex-col md:flex-row justify-center gap-10 px-10 mt-64">
           {isMonthly ? (
             <>
               {/* Monthly Plans */}
