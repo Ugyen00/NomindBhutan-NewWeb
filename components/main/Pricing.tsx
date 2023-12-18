@@ -192,7 +192,7 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">700</span>
             </p>
             <p className="pb-[30px] font-light">for 1000 credits</p>
-            <a href="#contact-us" className="cursor-pointer">
+            <a href="/contact" className="cursor-pointer">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
@@ -213,7 +213,7 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">3000</span>
             </p>
             <p className="pb-[30px] font-light">per month</p>
-            <a href="#contact-us" className="cursor-pointer">
+            <a href="/contact" className="cursor-pointer">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
@@ -234,7 +234,7 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">1000</span>
             </p>
             <p className="pb-[30px] font-light">for 1000 credits</p>
-            <a href="#contact-us" className="cursor-pointer">
+            <a href="/contact" className="cursor-pointer">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
@@ -257,7 +257,7 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">5000</span>
             </p>
             <p className="pb-[30px] font-light">per month</p>
-            <a href="#contact-us" className="cursor-pointer">
+            <a href="/contact" className="cursor-pointer">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
@@ -278,7 +278,7 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">1500</span>
             </p>
             <p className="pb-[30px] font-light">per month</p>
-            <a href="#contact-us" className="cursor-pointer">
+            <a href="/contact" className="cursor-pointer">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
@@ -299,7 +299,7 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">2000</span>
             </p>
             <p className="pb-[30px] font-light">per month</p>
-            <a href="#contact-us" className="cursor-pointer">
+            <a href="/contact" className="cursor-pointer">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"

@@ -6,7 +6,10 @@ const Navbar = () => {
   return (
     <div className="w-full h-[50px] fixed top-2 z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[25px] backdrop-blur-lg backdrop-filter bg-[#0300145e] bg-opacity-70 rounded-full border border-[#7042f861]">
-        <Link href="#home" className="h-auto w-auto flex flex-row items-center">
+        <Link
+          href="/#home"
+          className="h-auto w-auto flex flex-row items-center"
+        >
           <Image
             src="/NavLogo.png"
             alt="logo"
