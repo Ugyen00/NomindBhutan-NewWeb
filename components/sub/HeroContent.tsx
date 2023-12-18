@@ -64,7 +64,7 @@ const HeroContent = () => {
           NoMindBhutan is a pioneering AI chatbot agent startup that is
           reshaping the way businesses connect with their customers.
         </motion.p>
-        <a href="#contact-us" className="cursor-pointer">
+        <a href="/contact" className="cursor-pointer">
           <motion.div
             variants={slideInFromTop}
             className="Welcome-box py-[10px] px-[10px] border border-[#7042f88b] opacity-[0.9]"

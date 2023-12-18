@@ -14,10 +14,10 @@ const Pricing = () => {
   return (
     <>
       <div
-        className="flex flex-row relative items-center justify-center min-h-screen w-full h-full z-30"
+        className="flex flex-row relative items-center justify-center z-30"
         id="pricing"
       >
-        <div className="absolute w-auto h-auto top-0 z-[5]">
+        <div className="absolute top-0 z-[5]">
           <motion.div
             variants={slideInFromTop}
             className="text-[40px] font-bold text-center text-gray-200"

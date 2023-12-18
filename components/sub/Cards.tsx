@@ -52,7 +52,7 @@ const Cards = ({
         </ul>
 
         <a
-          href={`#contact-us`}
+          href={`/contact`}
           className="cursor-pointer flex items-center justify-center mt-8"
         >
           <motion.div

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 
 const Navbar = () => {
   return (
@@ -18,16 +18,16 @@ const Navbar = () => {
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-30">
           <div className="flex items-center justify-between w-full h-auto mr-[15px] px-[20px] py-[10px] text-gray-200">
-            <a href="#services" className="cursor-pointer">
+            <a href="/#services" className="cursor-pointer">
               Services
             </a>
-            <a href="#pricing" className="cursor-pointer">
+            <a href="/#pricing" className="cursor-pointer">
               Pricing
             </a>
-            <a href="#aboutus" className="cursor-pointer">
+            <a href="/#aboutus" className="cursor-pointer">
               About Us
             </a>
-            <a href="#featuredbot" className="cursor-pointer">
+            <a href="/#featuredbot" className="cursor-pointer">
               Featured Bot
             </a>
           </div>

@@ -46,18 +46,24 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-white flex items-center justify-center mt-8 mb-8">
-          <a href="#home">
-            <Image src="/NavLogo.png" alt="logo" width={250} height={125} />
+        <div className="text-white flex items-center mt-8 mb-8">
+          <a href="/#home">
+            <Image
+              src="/NavLogo.png"
+              alt="logo"
+              width={250}
+              height={125}
+              className="ml-24"
+            />
           </a>
-          <div className="pt-[8px]  pl-[149px] text-[18px]">
+          <div className="pt-[8px]  pl-[130px] text-[18px] ml-[180px]">
             <p className="font-semibold mb-2">Quick Links</p>
             <ul className="font-light">
               <li>Privacy Policy</li>
               <li>Terms of Use</li>
             </ul>
           </div>
-          <div className="pt-[6px] pl-[149px] text-[18px]">
+          <div className="pt-[6px] pl-[149px] text-[18px] ml-[170px]">
             <p className="font-semibold mb-2">Contact Us</p>
             <ul className="font-light">
               <li>

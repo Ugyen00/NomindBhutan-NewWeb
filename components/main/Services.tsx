@@ -9,7 +9,7 @@ const Services = () => {
     <>
       <h1
         id="services"
-        className="text-[40px] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-8"
+        className="text-[40px] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-8 pt-16"
       >
         Services Offered
       </h1>
@@ -38,7 +38,7 @@ const Services = () => {
               communication, enhancing customer satisfaction <br />
               and operational efficiency.
             </p>
-            <a href={`#contact-us`} className="cursor-pointer flex pt-8 ">
+            <a href="/contact" className="cursor-pointer flex pt-8 ">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
@@ -71,7 +71,7 @@ const Services = () => {
               functions, and drive operational efficiency with our <br />
               tailored automation solutions.
             </p>
-            <a href={`#contact-us`} className="cursor-pointer flex pt-8 ">
+            <a href="/contact" className="cursor-pointer flex pt-8 ">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
@@ -108,7 +108,7 @@ const Services = () => {
               <br />
               contributing to the evolution of intelligent systems.
             </p>
-            <a href={`#contact-us`} className="cursor-pointer flex pt-8">
+            <a href="/contact" className="cursor-pointer flex pt-8">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"

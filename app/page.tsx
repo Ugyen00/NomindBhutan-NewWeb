@@ -1,8 +1,13 @@
-import Pricing from "@/components/main/Pricing";
+"use client";
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Hero from "@/components/main/Hero";
-import FeaturedBot from "@/components/main/FeaturedBot";
 import Services from "@/components/main/Services";
+import Pricing from "@/components/main/Pricing";
 import AboutUs from "@/components/main/AboutUs";
+import FeaturedBot from "@/components/main/FeaturedBot";
 
 export default function Home() {
   return (
@@ -14,6 +19,11 @@ export default function Home() {
         <AboutUs />
         <FeaturedBot />
       </div>
+      <Router>
+        <Routes>
+          <Route path="/contact" />
+        </Routes>
+      </Router>
     </main>
   );
 }
