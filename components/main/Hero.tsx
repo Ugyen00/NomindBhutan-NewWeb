@@ -7,11 +7,11 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const logos = [
-    { name: "gcit1.svg", width: 250, height: 200 },
-    { name: "bnb1.svg", width: 250, height: 200 },
-    { name: "nlcs1.svg", width: 250, height: 200 },
-    { name: "ndi1.svg", width: 250, height: 200 },
-    { name: "dhi1.svg", width: 250, height: 200 },
+    { name: "gcit.svg", width: 250, height: 200 },
+    { name: "bnb.svg", width: 250, height: 200 },
+    { name: "nlc.svg", width: 250, height: 200 },
+    { name: "ndi.svg", width: 250, height: 200 },
+    { name: "dhi.svg", width: 250, height: 200 },
   ];
   return (
     <>
@@ -32,7 +32,7 @@ const Hero = () => {
       >
         <motion.div
           variants={slideInFromTop}
-          className="text-[40px] font-bold text-center text-gray-200"
+          className="text-[40px] font-bold text-center text-gray-200 mb-16"
         >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             {" "}

@@ -23,7 +23,6 @@ const Pricing = () => {
               variants={slideInFromTop}
               className="text-[40px] font-bold text-center text-gray-200"
             >
-              Simple and Transparent
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
                 Pricing{" "}
@@ -54,7 +53,7 @@ const Pricing = () => {
             </button>
             <button
               onClick={handleToggle}
-              className={`text-[13px] py-2 px-4  border border-[#6F00FF] ${
+              className={`text-[13px] py-2 px-6  border border-[#6F00FF] ${
                 !isMonthly ? "bg-[#6F00FF] text-white" : "text-[#6F00FF]"
               }`}
             >
