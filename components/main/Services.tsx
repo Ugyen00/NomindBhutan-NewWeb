@@ -10,7 +10,7 @@ const Services = () => {
       <motion.div
         id="services"
         variants={slideInFromTop}
-        className="text-[40px] font-bold text-center text-gray-200 py-8 pt-16"
+        className="text-[40px] font-bold text-center mb-4 py-8 pt-16 text-white"
       >
         SERVICES
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -24,7 +24,7 @@ const Services = () => {
           <div className="mr-16">
             <motion.div
               variants={slideInFromTop}
-              className="text-[35px] mb-8 font-bold ml-8"
+              className="text-[35px] mb-8 font-bold"
             >
               AI
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -32,14 +32,18 @@ const Services = () => {
                 CHATBOT{" "}
               </span>
             </motion.div>
-            <p className="text-[20px] text-gray-200 pr-16 pl-8 ">
+            <p className="text-[20px] text-gray-200">
               Elevate customer interactions with our AI Chatbot service,
-              employing advanced natural language processing and machine
-              learning. Our intelligent virtual assistants ensure seamless,
-              personalized communication, enhancing customer satisfaction and
-              operational efficiency.
+              employing
+              <br />
+              advanced natural language processing and machine learning. Our
+              <br />
+              intelligent virtual assistants ensure seamless, personalized
+              <br />
+              communication, enhancing customer satisfaction <br />
+              and operational efficiency.
             </p>
-            <a href="/contact" className="cursor-pointer flex pt-8 pl-8 ">
+            <a href="/contact" className="cursor-pointer flex pt-8 ">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
@@ -48,27 +52,31 @@ const Services = () => {
               </motion.div>
             </a>
           </div>
-          <Image
-            src="video.svg"
-            alt="video"
+          <iframe
             width={700}
             height={500}
-            className="mr-16"
-          />
+            src="https://www.youtube.com/embed/TKVd8uMlYN8?si=7y-Y1VZDelPfHVmE"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>{" "}
         </div>
 
-        <div className="text-white flex items-center justify-center  mb-32">
-          <Image
-            src="video.svg"
-            alt="video"
+        <div className="text-white flex items-center justify-center ml-8 mb-32">
+          <iframe
             width={700}
             height={500}
-            className="ml-16"
-          />
-          <div className="ml-8">
+            src="https://www.youtube.com/embed/TKVd8uMlYN8?si=7y-Y1VZDelPfHVmE"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>{" "}
+          <div className="ml-36">
             <motion.div
               variants={slideInFromTop}
-              className="text-[35px] mb-8 font-bold ml-8"
+              className="text-[35px] mb-8 font-bold"
             >
               AI
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -76,13 +84,15 @@ const Services = () => {
                 AUTOMATION{" "}
               </span>
             </motion.div>
-            <p className="text-[20px] text-gray-200 p-8">
-              Streamline and optimize operations with our AI Automation service,
-              leveraging artificial intelligence to automate repetitive tasks.
-              Boost productivity, focus on core business functions, and drive
-              operational efficiency with our tailored automation solutions.
+            <p className="text-[20px] text-gray-200">
+              Streamline and optimize operations with our AI Automation <br />
+              service, leveraging artificial intelligence to automate <br />
+              repetitive tasks. Boost productivity, focus on core business{" "}
+              <br />
+              functions, and drive operational efficiency with our <br />
+              tailored automation solutions.
             </p>
-            <a href="/contact" className="cursor-pointer flex pt-4 ml-8 ">
+            <a href="/contact" className="cursor-pointer flex pt-8 ">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
@@ -94,29 +104,32 @@ const Services = () => {
         </div>
 
         <div className="text-white flex items-center justify-center mb-32 ml-8">
-          <div className="mr-16 ">
+          <div className="mr-16">
             <motion.div
               variants={slideInFromTop}
-              className="text-[35px] mb-8 font-bold ml-8"
+              className="text-[35px] mb-8 font-bold"
             >
               AI
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
                 RESEARCH{" "}
               </span>
-              &
+              AND
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
                 DEVELOPMENT{" "}
               </span>
             </motion.div>
-            <p className="text-[20px] text-gray-200 p-8">
+            <p className="text-[20px] text-gray-200">
               Pioneer the future of artificial intelligence through our AI
+              <br />
               Research and Development services. Collaborate with us to explore
+              <br />
               emerging technologies, pushing the boundaries of AI innovation and
+              <br />
               contributing to the evolution of intelligent systems.
             </p>
-            <a href="/contact" className="cursor-pointer flex pt-8 ml-8">
+            <a href="/contact" className="cursor-pointer flex pt-8">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
@@ -125,13 +138,15 @@ const Services = () => {
               </motion.div>
             </a>
           </div>
-          <Image
-            src="video.svg"
-            alt="video"
+          <iframe
             width={700}
             height={500}
-            className="mr-16"
-          />
+            src="https://www.youtube.com/embed/TKVd8uMlYN8?si=7y-Y1VZDelPfHVmE"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>{" "}
         </div>
       </div>
 
