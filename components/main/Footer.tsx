@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="text-white">
           <motion.div
             variants={slideInFromTop}
-            className="font-bold text-[50px] pl-16 pt-8"
+            className="font-bold text-[50px] md:pl-8 lg:pl-16 pt-8"
           >
             DROP US
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -29,10 +29,10 @@ const Footer = () => {
               A LINE{" "}
             </span>
           </motion.div>
-          <div className="flex items-center">
+          <div className="flex items-start lg:items-center">
             <motion.div
               variants={slideInFromTop}
-              className="text-[30px] pl-16 pt-8]"
+              className="text-[30px] md:pl-16 pt-8]"
             >
               Let's build
               <br />
@@ -46,17 +46,17 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-white flex items-center mt-8 mb-8">
+        <div className="text-white flex items-start md:items-center md:flex-row flex-col mt-8 mb-8">
           <a href="/#home">
             <Image
               src="/NavLogo.png"
               alt="logo"
               width={250}
               height={125}
-              className="ml-24"
+              className="md:ml-24 mb-8"
             />
           </a>
-          <div className="pt-[8px]  pl-[130px] text-[18px] ml-[180px]">
+          <div className="pt-[4px] md:pt-[8px] md:pl-[65px] lg:pl-[130px] text-[18px] md:ml-[90px] lg:ml-[180px] mb-8">
             <p className="font-semibold mb-2">Quick Links</p>
             <ul className="font-light">
               <li className="cursor-pointer relative group mb-2">
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="pt-[6px] pl-[149px] text-[18px] ml-[170px]">
+          <div className="pt-[3px] md:pt-[6px] md:pl-[74px] lg:pl-[149px] text-[18px] md:ml-[85px] lg:ml-[170px]">
             <p className="font-semibold mb-2">Contact Us</p>
             <ul className="font-light">
               <li className="mb-2">
@@ -93,7 +93,7 @@ const Footer = () => {
           style={{ maxWidth: "1300px" }}
         />
 
-        <div className="flex justify-center mt-8 mb-4">
+        <div className="flex items-start md:justify-center mt-8 mb-4">
           <a
             href="https://www.facebook.com/nomindbhutan?mibextid=LQQJ4d"
             target="_blank"
@@ -127,7 +127,7 @@ const Footer = () => {
             <FaLinkedin size={25} />
           </a>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-start md:items-center">
           <div className=" text-white flex items-center font-light text-[18px] mt-2 mb-4">
             <PiCopyrightThin />
             <p className="ml-1">NoMindBhutan</p>

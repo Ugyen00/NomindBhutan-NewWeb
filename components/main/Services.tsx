@@ -10,7 +10,7 @@ const Services = () => {
       <motion.div
         id="services"
         variants={slideInFromTop}
-        className="text-[40px] font-bold text-center mb-4 py-8 pt-16 text-white"
+        className="text-[40px] font-bold text-center md:mb-4 py-8 pt-16 text-white"
       >
         SERVICES
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -20,8 +20,8 @@ const Services = () => {
       </motion.div>
 
       <div className="relative min-h-screen w-full h-full z-30">
-        <div className="text-white flex items-center justify-center ml-8 mb-32">
-          <div className="mr-16">
+        <div className="text-white flex flex-col md:flex-row items-center justify-center ml-8 mb-32">
+          <div className="md:mr-16">
             <motion.div
               variants={slideInFromTop}
               className="text-[35px] mb-8 font-bold"
@@ -60,10 +60,11 @@ const Services = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            className="p-16 md:p-0"
           ></iframe>{" "}
         </div>
 
-        <div className="text-white flex items-center justify-center ml-8 mb-32">
+        <div className="text-white flex flex-col md:flex-row items-center justify-center ml-8 mb-32">
           <iframe
             width={700}
             height={500}
@@ -72,8 +73,9 @@ const Services = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            className="p-16 md:p-0"
           ></iframe>{" "}
-          <div className="ml-36">
+          <div className="md:ml-36">
             <motion.div
               variants={slideInFromTop}
               className="text-[35px] mb-8 font-bold"
@@ -103,8 +105,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="text-white flex items-center justify-center mb-32 ml-8">
-          <div className="mr-16">
+        <div className="text-white flex flex-col md:flex-row items-center justify-center md:mb-32 ml-8">
+          <div className="md:mr-16">
             <motion.div
               variants={slideInFromTop}
               className="text-[35px] mb-8 font-bold"
@@ -146,6 +148,7 @@ const Services = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            className="p-16 md:p-0"
           ></iframe>{" "}
         </div>
       </div>
@@ -165,7 +168,7 @@ const Services = () => {
         <div className="flex items-center justify-center ml-8 mb-16">
           <Image src="working.svg" alt="working" width={700} height={500} />
         </div>
-        <p className="text-gray-200 text-[18px] text-center">
+        <p className="text-gray-200 text-[18px] text-center p-8">
           The chatbot aids you by solve your customers queries by engaging into
           a conversation{" "}
         </p>
@@ -188,9 +191,10 @@ const Services = () => {
             alt="integration"
             width={700}
             height={500}
+            className="p-4"
           />
         </div>
-        <p className="text-gray-200 text-[18px] text-center mb-32">
+        <p className="text-gray-200 text-[18px] text-center mb-16 md:mb-32">
           Integration on various apps without having hard time to code
         </p>
       </div>

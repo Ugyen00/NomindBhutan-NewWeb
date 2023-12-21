@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <>
       <div id="contact" className="mt-24 relative z-30">
-        <div className="flex flex-col items-center justify-center mb-16 ml-8 mt-4 text-white ">
+        <div className="flex flex-col items-center justify-center mb-16 md:ml-8 mt-4 p-8 text-white ">
           <motion.div
             variants={slideInFromTop}
             className="text-[35px] mb-8 font-bold"
@@ -36,7 +36,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="ml-16 flex items-center justify-center">
+        <div className="md:ml-16 flex flex-col md:flex-row items-center justify-center">
           <form method="post" action="#">
             <div className="mb-8">
               <input
@@ -77,7 +77,7 @@ const Contact = () => {
               </a>
             </div>
           </form>
-          <div className="pl-16 pb-16">{googleMapsIframe}</div>
+          <div className="md:pl-16 pb-16">{googleMapsIframe}</div>
         </div>
       </div>
     </>

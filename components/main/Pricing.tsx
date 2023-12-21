@@ -62,7 +62,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="h-full w-full flex flex-col md:flex-row justify-center gap-10 px-10 mt-64">
+        <div className="h-full w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-10 mt-64">
           {isMonthly ? (
             <>
               {/* Monthly Plans */}
@@ -195,7 +195,7 @@ const Pricing = () => {
           ONs
         </motion.div>
 
-        <div className="h-full w-full flex flex-col md:flex-row justify-center gap-10 px-10 mt-8">
+        <div className="h-full w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-10 mt-8">
           <div
             className="border border-[#7042f88b] border-solid p-4 pl-16 pr-16 text-center text-white rounded-lg"
             style={{ height: "250px", width: "400px" }}
@@ -260,7 +260,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="h-full w-full flex flex-col md:flex-row justify-center gap-10 px-10 mt-8">
+        <div className="h-full w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-10 mt-8">
           <div
             className="border border-[#7042f88b] border-solid p-4 pl-16 pr-16 text-center text-white rounded-lg"
             style={{ height: "250px", width: "400px" }}

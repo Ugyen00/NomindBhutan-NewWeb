@@ -21,7 +21,7 @@ const FeaturedBot = () => {
           </span>
           BOTS
         </motion.div>
-        <div className="h-full w-full flex flex-col md:flex-row justify-center gap-10 px-10">
+        <div className="h-full w-full flex flex-col lg:flex-row items-center justify-center gap-10 px-10">
           <div className="text-center">
             <Bots
               src="/NdiBot.svg"
