@@ -18,11 +18,14 @@ const Contact = () => {
   );
   return (
     <>
-      <div id="contact" className="mt-24 relative z-30">
-        <div className="flex flex-col items-center justify-center mb-16 md:ml-8 mt-4 p-8 text-white ">
+      <div
+        id="contact"
+        className="mt-24 relative z-30 items-center justify-center"
+      >
+        <div className="flex flex-col mb-16 lg:ml-8 mt-4 md:p-8 text-white items-center justify-center">
           <motion.div
             variants={slideInFromTop}
-            className="text-[35px] mb-8 font-bold"
+            className="text-[25px] lg:text-[35px] mb-8 font-bold lg:ml-8  pl-8 sm:pl-0"
           >
             GET IN
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -30,17 +33,17 @@ const Contact = () => {
               TOUCH{" "}
             </span>
           </motion.div>
-          <p className="font-light text-lg text-center">
+          <p className="font-light text-lg text-center  pl-8 sm:pl-0 ">
             As you might expect of a company that began as a potential startup,
             we pay strict attention to the things we do.
           </p>
         </div>
 
-        <div className="md:ml-16 flex flex-col md:flex-row items-center justify-center">
+        <div className="lg:ml-16 lg:mr-8 flex flex-col lg:flex-row  items-center justify-center">
           <form method="post" action="#">
             <div className="mb-8">
               <input
-                className="mt-1 p-2 w-[500px] rounded-[10px] border-b border-[#7042f861] text-white bg-transparent outline-none"
+                className="mt-1 p-2 w-full md:w-[250px] xl:w-[500px] rounded-[10px] border-b border-[#7042f861] text-white bg-transparent outline-none"
                 type="text"
                 placeholder="Your Name"
               />
@@ -48,7 +51,7 @@ const Contact = () => {
 
             <div className="mb-8">
               <input
-                className="mt-1 p-2 border-b w-[500px] rounded-[10px] border-[#7042f861] text-white bg-transparent outline-none"
+                className="mt-1 p-2 w-full md:w-[250px] xl:w-[500px] rounded-[10px] border-b border-[#7042f861] text-white bg-transparent outline-none"
                 name="email"
                 id="email"
                 type="email"
@@ -58,7 +61,7 @@ const Contact = () => {
 
             <div className="mb-8">
               <textarea
-                className="mt-1 p-2 w-[500px] rounded-[10px] border-b border-[#7042f861] text-white bg-transparent outline-none"
+                className="mt-1 p-2 w-full md:w-[250px] xl:w-[500px] rounded-[10px] border-b border-[#7042f861] text-white bg-transparent outline-none"
                 rows={3}
                 name="bio"
                 id="bio"
@@ -66,7 +69,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <div className="font-light mb-5 z-10">
-              <a className="flex mt-8 ">
+              <a className="flex mt-8">
                 <motion.div
                   variants={slideInFromTop}
                   className="Welcome-box py-[10px] px-[20px] border border-[#7042f88b] opacity-[0.9] cursor-pointer"
@@ -77,7 +80,8 @@ const Contact = () => {
               </a>
             </div>
           </form>
-          <div className="md:pl-16 pb-16">{googleMapsIframe}</div>
+
+          <div className="lg:pl-16 pb-16 mt-8">{googleMapsIframe}</div>
         </div>
       </div>
     </>

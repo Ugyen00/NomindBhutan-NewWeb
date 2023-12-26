@@ -21,7 +21,7 @@ const Pricing = () => {
           <div className="mt-16">
             <motion.div
               variants={slideInFromTop}
-              className="text-[40px] font-bold text-center text-gray-200"
+              className="text-[30px] sm:text-[40px] font-bold text-center text-gray-200"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
@@ -31,7 +31,7 @@ const Pricing = () => {
             </motion.div>
             <motion.div
               variants={slideInFromTop}
-              className="text-[20px] font-medium text-center text-gray-200 mt-4"
+              className="text-[16px] sm:text-[20px] font-medium text-center text-gray-200 mt-4"
             >
               Get a month for
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -62,7 +62,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="h-full w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-10 mt-64">
+        <div className="h-full w-full flex flex-wrap justify-center items-center gap-10 px-10 mt-64 ">
           {isMonthly ? (
             <>
               {/* Monthly Plans */}
@@ -195,7 +195,7 @@ const Pricing = () => {
           ONs
         </motion.div>
 
-        <div className="h-full w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-10 mt-8">
+        <div className="h-full w-full flex flex-wrap justify-center items-center gap-10 px-10 mt-8">
           <div
             className="border border-[#7042f88b] border-solid p-4 pl-16 pr-16 text-center text-white rounded-lg"
             style={{ height: "250px", width: "400px" }}
@@ -260,7 +260,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="h-full w-full flex flex-col lg:flex-row justify-center items-center gap-10 px-10 mt-8">
+        <div className="h-full w-full flex flex-wrap justify-center items-center gap-10 px-10 mt-8">
           <div
             className="border border-[#7042f88b] border-solid p-4 pl-16 pr-16 text-center text-white rounded-lg"
             style={{ height: "250px", width: "400px" }}

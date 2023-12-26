@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="flex items-start lg:items-center">
             <motion.div
               variants={slideInFromTop}
-              className="text-[30px] md:pl-16 pt-8]"
+              className="text-[30px] md:pl-16 sm:pt-8]"
             >
               Let's build
               <br />
@@ -56,7 +56,7 @@ const Footer = () => {
               className="md:ml-24 mb-8"
             />
           </a>
-          <div className="pt-[4px] md:pt-[8px] md:pl-[65px] lg:pl-[130px] text-[18px] md:ml-[90px] lg:ml-[180px] mb-8">
+          <div className="pt-[4px] md:pt-[8px] md:pl-[65px] xl:pl-[130px] md:text-[18px] sm:text-[24px] md:ml-[90px] lg:ml-[180px] mb-8 ">
             <p className="font-semibold mb-2">Quick Links</p>
             <ul className="font-light">
               <li className="cursor-pointer relative group mb-2">
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="pt-[3px] md:pt-[6px] md:pl-[74px] lg:pl-[149px] text-[18px] md:ml-[85px] lg:ml-[170px]">
+          <div className="pt-[4px] sm:pt-[6px] xl:pl-[149px] sm:text-[24px] md:text-[18px] md:ml-[85px] lg:ml-[170px]">
             <p className="font-semibold mb-2">Contact Us</p>
             <ul className="font-light">
               <li className="mb-2">
@@ -88,10 +88,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr
-          className="border-t border-white my-4 mx-auto"
-          style={{ maxWidth: "1300px" }}
-        />
+        <hr className="border-t border-white my-4 mx-auto w-full md:w-[80%] xl:w-[1300px]" />
 
         <div className="flex items-start md:justify-center mt-8 mb-4">
           <a

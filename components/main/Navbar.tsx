@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <div className="w-full h-[50px] fixed top-2 z-40 px-10">
+      <div className="w-full h-[50px] fixed top-2 z-40 px-7 sm:px-10">
         <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[25px] backdrop-blur-lg backdrop-filter bg-[#0300145e] bg-opacity-70 rounded-full border border-[#7042f861] relative">
           <Link
             href="/#home"
@@ -82,66 +82,72 @@ const Navbar = () => {
       {/* Mobile and Tablet Sidebar */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div
-            className="md:hidden fixed top-0 right-0 h-screen w-1/2 bg-black z-50"
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: "0%" }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="flex flex-col items-end mr-16 py-10">
-              <Link href="/#services" passHref>
+          <>
+            <motion.div
+              className="fixed inset-0 bg-black opacity-40 z-40"
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.6 }}
+              onClick={closeMobileMenu}
+            ></motion.div>
+            <motion.div
+              className="md:hidden fixed top-0 right-0 h-screen w-1/2 bg-black z-50"
+              initial={{ opacity: 0, x: "100%" }}
+              animate={{ opacity: 1, x: "0%" }}
+              exit={{ opacity: 0, x: "100%" }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="flex flex-col items-end mr-16 py-10">
+                <Link href="/#services" passHref>
+                  <button
+                    className="text-white block cursor-pointer mt-8 mb-8 relative group"
+                    onClick={closeMobileMenu}
+                  >
+                    Services
+                    <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  </button>
+                </Link>
+                <Link href="/#pricing" passHref>
+                  <button
+                    className="text-white block cursor-pointer mb-8 relative group"
+                    onClick={closeMobileMenu}
+                  >
+                    Pricing
+                    <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  </button>
+                </Link>
+                <Link href="/#aboutus" passHref>
+                  <button
+                    className="text-white block cursor-pointer mb-8 relative group"
+                    onClick={closeMobileMenu}
+                  >
+                    About Us
+                    <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  </button>
+                </Link>
+                <Link href="/#featuredbot" passHref>
+                  <button
+                    className="text-white block cursor-pointer mb-8 relative group"
+                    onClick={closeMobileMenu}
+                  >
+                    Featured Bot
+                    <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  </button>
+                </Link>
                 <button
-                  className="text-white block cursor-pointer mt-8 mb-8 relative group"
+                  className="cursor-pointer mb-8 relative group"
                   onClick={closeMobileMenu}
                 >
-                  Services
+                  <button className="text-white block">Dashboard</button>
                   <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                 </button>
-              </Link>
-              <Link href="/#pricing" passHref>
-                <button
-                  className="text-white block cursor-pointer mb-8 relative group"
-                  onClick={closeMobileMenu}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Pricing
-                  <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-                </button>
-              </Link>
-              <Link href="/#aboutus" passHref>
-                <button
-                  className="text-white block cursor-pointer mb-8 relative group"
-                  onClick={closeMobileMenu}
-                >
-                  About Us
-                  <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-                </button>
-              </Link>
-              <Link href="/#featuredbot" passHref>
-                <button
-                  className="text-white block cursor-pointer mb-8 relative group"
-                  onClick={closeMobileMenu}
-                >
-                  Featured Bot
-                  <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-                </button>
-              </Link>
-              <button
-                className="cursor-pointer mb-8 relative group"
-                onClick={closeMobileMenu}
-              >
-                <button className="text-white block">Dashboard</button>
-                <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-              </button>
-            </div>
-          </motion.div>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
 
       {/* Hamburger Icon for small screens */}
-      <div className="md:hidden fixed top-5 right-2 mr-16 z-50">
+      <div className="md:hidden fixed top-5 right-2 mr-8 sm:mr-16 z-50">
         <button
           onClick={toggleMobileMenu}
           className="text-white cursor-pointer"

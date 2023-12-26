@@ -31,13 +31,13 @@ const Cards = ({
       style={cardStyles}
     >
       <div className="relative p-4">
-        <h1 className="text-2xl font-semibold text-white text-center">
+        <h1 className="text-xl sm:text-2xl font-semibold text-white text-center">
           {title}
         </h1>
         <p className="mt-4 text-white text-center">
           <span className="text-lg font-bold">{integerPart}.</span>
           {decimalPart && (
-            <span className="text-2xl font-bold">{decimalPart}</span>
+            <span className="text-xl sm:text-2xl font-bold">{decimalPart}</span>
           )}{" "}
         </p>
         <p className="mt-4 text-white text-center">{time}</p>
@@ -60,7 +60,7 @@ const Cards = ({
         >
           <motion.div
             variants={slideInFromTop}
-            className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
+            className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9] items-center"
             style={buttonStyles}
           >
             <h1 className="Welcome-text text-[13px]">Select Plan</h1>
