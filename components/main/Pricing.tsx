@@ -82,9 +82,6 @@ const Pricing = () => {
                   width: "400px",
                   height: "600px",
                 }}
-                buttonStyles={{
-                  marginTop: "120px",
-                }}
               />
               <Cards
                 title="Enterprise Plan"
@@ -116,9 +113,6 @@ const Pricing = () => {
                   width: "400px",
                   height: "600px",
                 }}
-                buttonStyles={{
-                  marginTop: "270px",
-                }}
               />
             </>
           ) : (
@@ -139,9 +133,6 @@ const Pricing = () => {
                 cardStyles={{
                   width: "400px",
                   height: "600px",
-                }}
-                buttonStyles={{
-                  marginTop: "120px",
                 }}
               />
               <Cards
@@ -175,9 +166,6 @@ const Pricing = () => {
                   width: "400px",
                   height: "600px",
                 }}
-                buttonStyles={{
-                  marginTop: "270px",
-                }}
               />
             </>
           )}
@@ -207,10 +195,13 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">700</span>
             </p>
             <p className="pb-[30px] font-light">for 1000 credits</p>
-            <a href="/contact" className="cursor-pointer">
+            <a
+              href="/contact"
+              className="cursor-pointer flex justify-center items-center"
+            >
               <motion.div
                 variants={slideInFromTop}
-                className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
+                className="Welcome-box py-[10px] px-[25px]  border border-[#7042f88b] opacity-[0.9] "
               >
                 <h1 className="Welcome-text text-[13px]">PURCHASE NOW</h1>
               </motion.div>
@@ -228,10 +219,13 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">3000</span>
             </p>
             <p className="pb-[30px] font-light">per month</p>
-            <a href="/contact" className="cursor-pointer">
+            <a
+              href="/contact"
+              className="cursor-pointer flex justify-center items-center"
+            >
               <motion.div
                 variants={slideInFromTop}
-                className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
+                className="Welcome-box py-[10px] px-[25px]  border border-[#7042f88b] opacity-[0.9]"
               >
                 <h1 className="Welcome-text text-[13px]">PURCHASE NOW</h1>
               </motion.div>
@@ -249,10 +243,13 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">1000</span>
             </p>
             <p className="pb-[30px] font-light">for 1000 credits</p>
-            <a href="/contact" className="cursor-pointer">
+            <a
+              href="/contact"
+              className="cursor-pointer flex justify-center items-center"
+            >
               <motion.div
                 variants={slideInFromTop}
-                className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
+                className="Welcome-box py-[10px] px-[25px]  border border-[#7042f88b] opacity-[0.9]"
               >
                 <h1 className="Welcome-text text-[13px]">PURCHASE NOW</h1>
               </motion.div>
@@ -272,10 +269,13 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">5000</span>
             </p>
             <p className="pb-[30px] font-light">per month</p>
-            <a href="/contact" className="cursor-pointer">
+            <a
+              href="/contact"
+              className="cursor-pointer flex justify-center items-center"
+            >
               <motion.div
                 variants={slideInFromTop}
-                className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
+                className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
               >
                 <h1 className="Welcome-text text-[13px]">PURCHASE NOW</h1>
               </motion.div>
@@ -293,10 +293,13 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">1500</span>
             </p>
             <p className="pb-[30px] font-light">per month</p>
-            <a href="/contact" className="cursor-pointer">
+            <a
+              href="/contact"
+              className="cursor-pointer flex justify-center items-center"
+            >
               <motion.div
                 variants={slideInFromTop}
-                className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
+                className="Welcome-box py-[10px] px-[25px]  border border-[#7042f88b] opacity-[0.9]"
               >
                 <h1 className="Welcome-text text-[13px]">PURCHASE NOW</h1>
               </motion.div>
@@ -314,10 +317,13 @@ const Pricing = () => {
               Nu.<span className="font-semibold text-[20px]">2000</span>
             </p>
             <p className="pb-[30px] font-light">per month</p>
-            <a href="/contact" className="cursor-pointer">
+            <a
+              href="/contact"
+              className="cursor-pointer flex justify-center items-center"
+            >
               <motion.div
                 variants={slideInFromTop}
-                className="Welcome-box py-[10px] px-[25px] ml-[55px] border border-[#7042f88b] opacity-[0.9]"
+                className="Welcome-box py-[10px] px-[25px] border border-[#7042f88b] opacity-[0.9]"
               >
                 <h1 className="Welcome-text text-[13px]">PURCHASE NOW</h1>
               </motion.div>

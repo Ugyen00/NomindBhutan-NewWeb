@@ -33,11 +33,11 @@ const AboutUs = () => {
             making technology more approachable and engaging.
           </p>
         </div>
-        <div className="flex flex-wrap items-center text-white justify-center mt-8 lg:mt-16">
+        <div className="flex flex-wrap justify-center items-center text-white mt-8 lg:mt-16">
           <CountUpAnimation targetCount={4} label="Clients" />
-          <div className="my-4 md:mx-4" />
+          <div className="xl:ml-4" />
           <CountUpAnimation targetCount={7} label="Employee" />
-          <div className="my-4 md:mx-4" />
+          <div />
           <CountUpAnimation targetCount={4} label="Project Completed" />
         </div>
         <div>

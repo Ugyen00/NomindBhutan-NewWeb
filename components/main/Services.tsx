@@ -21,7 +21,7 @@ const Services = () => {
 
       <div className="relative min-h-screen w-full h-full z-30">
         <div className="text-white flex flex-wrap items-center justify-center mb-16 sm:mb-32">
-          <div className="sm:mr-16 p-4 ml-4">
+          <div className=":mxlr-12 p-4 ml-4">
             <motion.div
               variants={slideInFromTop}
               className="text-[20px] sm:text-[35px] mb-4 sm:mb-8  font-bold"
@@ -63,14 +63,14 @@ const Services = () => {
 
         <div className="text-white flex flex-wrap items-center justify-center  mb-16 sm:mb-32">
           <iframe
-            className="sm:p-16 md:p-0 w-full sm:w-[90%] md:w-[70%] lg:w-[50%] xl:w-[40%] h-64 sm:h-[400px] lg:h-[500px] ml-4"
+            className="sm:p-16 md:p-0 w-full sm:w-[90%] md:w-[70%] lg:w-[50%] xl:w-[40%] h-64 sm:h-[400px] lg:h-[500px] lg:ml-4"
             src="https://www.youtube.com/embed/TKVd8uMlYN8?si=7y-Y1VZDelPfHVmE"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>{" "}
-          <div className="lg:ml-36 p-4 ">
+          <div className="xl:ml-36 p-4 ">
             <motion.div
               variants={slideInFromTop}
               className="text-[20px] sm:text-[35px] mb-4 sm:mb-8 font-bold"

@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
@@ -40,12 +39,12 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col md:flex-row items-center justify-center px-20 mt-40 w-full z-30"
     >
-      <div className="h-full w-full flex flex-col gap-8 justify-center m-auto text-start">
+      <div className="h-full w-full flex flex-col md:gap-2 lg:gap-8 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-4 mt-6 text-3xl sm:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-4 mt-16 md:mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
             Providing
@@ -76,12 +75,12 @@ const HeroContent = () => {
       </div>
       <motion.div
         variants={slideInFromRight(0.1)}
-        className="w-[550px] h-[550px] flex justify-center items-center ml-12 pr-16 pb-28"
+        className="w-full md:w-[550px] h-[550px] flex justify-center items-center mt-16 md:mt-0 md:ml-8 xl:ml-12 md:pr-16 xl:pb-28"
       >
         <Canvas
           dpr={[1, 2]}
           camera={{ fov: 10 }}
-          style={{ position: "absolute", height: 550, width: 550 }}
+          style={{ position: "absolute", height: "70%", width: "70%" }}
         >
           <PresentationControls
             speed={1.5}

@@ -33,10 +33,6 @@ const FeaturedBot = () => {
                 padding: "20px",
                 paddingBottom: "1px",
               }}
-              buttonStyles={{
-                marginLeft: "120px",
-                marginTop: "10px",
-              }}
               cardStyles={{
                 width: "370px",
                 height: "450px",
@@ -57,10 +53,6 @@ const FeaturedBot = () => {
                 marginTop: "20px",
                 marginBottom: "10px",
                 paddingBottom: "2px",
-              }}
-              buttonStyles={{
-                marginLeft: "120px",
-                marginTop: "24px",
               }}
               cardStyles={{
                 width: "370px",
@@ -83,10 +75,6 @@ const FeaturedBot = () => {
                 marginLeft: "40px",
                 marginBottom: "18px",
                 marginTop: "20px",
-              }}
-              buttonStyles={{
-                marginLeft: "120px",
-                marginTop: "25px",
               }}
               cardStyles={{
                 width: "370px",

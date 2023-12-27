@@ -15,19 +15,24 @@ const Hero = () => {
   ];
   return (
     <>
-      <div className="relative flex flex-col h-full w-full" id="home">
-        <video
-          autoPlay
-          muted
-          loop
-          className="rotate-180 absolute top-[-380px] sm:top-[-340px] h-full w-screen left-0 z-[1] object-cover"
-        >
-          <source src="/blackhole.webm" type="video/webm" />
-        </video>
-        <HeroContent />
+      <div className="relative">
+        <div className=" flex flex-col h-full w-full" id="home">
+          <video
+            autoPlay
+            muted
+            loop
+            className="rotate-180 absolute top-[-700px] sm:top-[-600px] md:top-[-400px] lg:top-[-340px] h-full w-screen left-0 object-cover z-[1]"
+          >
+            <source src="/blackhole.webm" type="video/webm" />
+          </video>
+          <div className="z-[20]">
+            <HeroContent />
+          </div>
+        </div>
       </div>
+
       <div
-        className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
+        className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-20"
         style={{ transform: "scale(0.9)" }}
       >
         <motion.div
