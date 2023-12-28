@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { PiCopyrightThin } from "react-icons/pi";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -60,12 +61,16 @@ const Footer = () => {
             <p className="font-semibold mb-2">Quick Links</p>
             <ul className="font-light">
               <li className="cursor-pointer relative group mb-2">
-                Privacy Policy{" "}
-                <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <Link href="/PrivacyPolicy" passHref>
+                  Privacy Policy{" "}
+                  <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                </Link>
               </li>
               <li className="cursor-pointer relative group">
-                Terms of Use{" "}
-                <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                <Link href="/terms" passHref>
+                  Terms of Use{" "}
+                  <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                </Link>
               </li>
             </ul>
           </div>
