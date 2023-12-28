@@ -21,7 +21,7 @@ const Hero = () => {
             autoPlay
             muted
             loop
-            className="rotate-180 absolute top-[-700px] sm:top-[-600px] md:top-[-400px] lg:top-[-340px] h-full w-screen left-0 object-cover z-[1]"
+            className="rotate-180 absolute top-[-450px] lg:top-[-340px] h-full w-screen left-0 object-cover z-[1]"
           >
             <source src="/blackhole.webm" type="video/webm" />
           </video>
@@ -45,7 +45,7 @@ const Hero = () => {
           </span>
           BY
         </motion.div>
-        <div className="flex flex-col md:flex-row justify-around flex-wrap mt-8 md:mt-4 gap-2 sm:gap-5 items-center">
+        <div className="flex justify-around flex-wrap mt-8 md:mt-4 gap-2 sm:gap-5 items-center">
           {logos.map((image, index) => (
             <SkillDataProvider
               key={index}

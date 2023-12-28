@@ -34,7 +34,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex w-[500px] h-full flex-row items-center justify-between md:mr-30">
+          <div className="hidden lg:flex w-[500px] h-full flex-row items-center justify-between md:mr-30">
             <div className="flex items-center justify-between w-full h-auto mr-[15px] px-[20px] py-[10px] text-gray-200">
               <Link href="/#services" passHref>
                 <button className="cursor-pointer relative group">
@@ -64,7 +64,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Dashboard Button */}
-          <div className="hidden md:flex h-auto w-auto flex flex-row items-center">
+          <div className="hidden lg:flex h-auto w-auto flex flex-row items-center">
             <button className="flex items-center justify-between w-full h-auto ml-2 px-2 py-[10px] rounded-full text-gray-200">
               Dashboard
               <Image
@@ -147,7 +147,7 @@ const Navbar = () => {
       </AnimatePresence>
 
       {/* Hamburger Icon for small screens */}
-      <div className="md:hidden fixed top-5 right-2 mr-8 sm:mr-16 z-50">
+      <div className="lg:hidden fixed top-5 right-2 mr-8 sm:mr-16 z-50">
         <button
           onClick={toggleMobileMenu}
           className="text-white cursor-pointer"

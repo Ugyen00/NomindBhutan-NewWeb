@@ -39,12 +39,12 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col md:flex-row items-center justify-center px-20 mt-40 w-full z-30"
+      className="flex flex-col lg:flex-row items-center justify-center px-10 lg:px-20 mt-8 sm:mt-20 md:mt-40 w-full z-30"
     >
-      <div className="h-full w-full flex flex-col md:gap-2 lg:gap-8 justify-center m-auto text-start">
+      <div className="h-full w-full flex flex-col lg:gap-8 justify-center m-auto text-start sm:text-center lg:text-start">
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-4 mt-16 md:mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col sm:gap-4 mt-16 md:mt-6 text-2xl sm:text-4xl lg:text-6xl font-bold text-white lg:max-w-[600px] w-auto h-auto"
         >
           <span>
             Providing
@@ -58,12 +58,15 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-8 max-w-[600px]"
+          className="text-lg text-wrap text-gray-400 my-8 lg:max-w-[600px]"
         >
           NoMindBhutan is a pioneering AI chatbot agent startup that is
           reshaping the way businesses connect with their customers.
         </motion.p>
-        <a href="/contact" className="cursor-pointer">
+        <a
+          href="/contact"
+          className="cursor-pointer flex justify-start items-start sm:items-center sm:justify-center lg:justify-start lg:items-start mb-8"
+        >
           <motion.div
             variants={slideInFromTop}
             className="Welcome-box py-[10px] px-[10px] border border-[#7042f88b] opacity-[0.9]"
@@ -75,12 +78,12 @@ const HeroContent = () => {
       </div>
       <motion.div
         variants={slideInFromRight(0.1)}
-        className="w-full md:w-[550px] h-[550px] flex justify-center items-center mt-16 md:mt-0 md:ml-8 xl:ml-12 md:pr-16 xl:pb-28"
+        className="w-full md:w-[550px] h-[450px] md:h-[550px] flex justify-center items-center mt-[-60px] lg:mt-16 xl:mt-4 md:ml-8 xl:ml-12 md:pr-16 xl:pb-28"
       >
         <Canvas
           dpr={[1, 2]}
           camera={{ fov: 10 }}
-          style={{ position: "absolute", height: "70%", width: "70%" }}
+          style={{ position: "absolute", height: "60%", width: "60%" }}
         >
           <PresentationControls
             speed={1.5}
