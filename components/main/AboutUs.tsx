@@ -56,9 +56,9 @@ const AboutUs = () => {
             <div className="flex flex-wrap items-center justify-center pb-8">
               <div className="mb-16 px-4">
                 <img
-                  src={"/img3.svg"}
+                  src={"/ugyen.jpg"}
                   alt="img3"
-                  style={{ width: 300, height: 300 }}
+                  style={{ width: 300, height: 250 }}
                   className=" md:pl-8"
                 />
                 <p className=" text-[16px] text-white md:pl-8">Ugyen Dendup</p>
@@ -69,9 +69,9 @@ const AboutUs = () => {
 
               <div className="mb-16 px-4">
                 <img
-                  src={"/img3.svg"}
+                  src={"/tsheltrim.jpg"}
                   alt="img3"
-                  style={{ width: 300, height: 300 }}
+                  style={{ width: 300, height: 250 }}
                   className=" md:pl-8"
                 />
                 <p className=" text-[16px] text-white md:pl-8">
@@ -83,9 +83,9 @@ const AboutUs = () => {
               </div>
               <div className="mb-16 px-4">
                 <img
-                  src={"/img3.svg"}
+                  src={"/kuenzang.jpg"}
                   alt="img3"
-                  style={{ width: 300, height: 300 }}
+                  style={{ width: 300, height: 250 }}
                   className=" md:pl-8"
                 />
                 <p className=" text-[16px] text-white md:pl-8">
@@ -97,9 +97,9 @@ const AboutUs = () => {
               </div>
               <div className="mb-16 px-4">
                 <img
-                  src={"/img3.svg"}
+                  src={"/pema.jpg"}
                   alt="img3"
-                  style={{ width: 300, height: 300 }}
+                  style={{ width: 300, height: 250 }}
                   className="md:pl-8"
                 />
                 <p className=" text-[16px] text-white md:pl-8">Pema</p>
@@ -112,9 +112,9 @@ const AboutUs = () => {
             <div className="flex flex-wrap items-center justify-center">
               <div className="mb-16 px-4">
                 <img
-                  src={"/img3.svg"}
+                  src={"/jamphel.jpg"}
                   alt="img3"
-                  style={{ width: 300, height: 300 }}
+                  style={{ width: 300, height: 250 }}
                   className="md:pl-8"
                 />
                 <p className=" text-[16px] text-white md:pl-8">
@@ -126,9 +126,9 @@ const AboutUs = () => {
               </div>
               <div className="mb-16 px-4">
                 <img
-                  src={"/img3.svg"}
+                  src={"/namda.jpg"}
                   alt="img3"
-                  style={{ width: 300, height: 300 }}
+                  style={{ width: 300, height: 250 }}
                   className="md:pl-8"
                 />
                 <p className=" text-[16px] text-white md:pl-8">
@@ -138,9 +138,9 @@ const AboutUs = () => {
               </div>
               <div className="mb-16 px-4">
                 <img
-                  src={"/img3.svg"}
+                  src={"/Nima.jpg"}
                   alt="img3"
-                  style={{ width: 300, height: 300 }}
+                  style={{ width: 300, height: 250 }}
                   className=" md:pl-8"
                 />
                 <p className=" text-[16px] text-white md:pl-8">Nima Wangdi</p>
