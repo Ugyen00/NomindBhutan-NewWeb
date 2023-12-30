@@ -37,7 +37,7 @@ const FeaturedBot = () => {
                 width: "370px",
                 height: "450px",
               }}
-              sectionId="ndi-section"
+              link="https://www.bhutanndi.com/"
             />
           </div>
 
@@ -58,7 +58,7 @@ const FeaturedBot = () => {
                 width: "370px",
                 height: "450px",
               }}
-              sectionId="nlcs-section"
+              link="https://www.nlcs.gov.bt/"
             />
           </div>
 
@@ -80,7 +80,7 @@ const FeaturedBot = () => {
                 width: "370px",
                 height: "450px",
               }}
-              sectionId="bnb-section"
+              link="https://bnb.bt/"
             />
           </div>
         </div>

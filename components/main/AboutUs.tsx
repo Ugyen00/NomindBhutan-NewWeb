@@ -1,11 +1,18 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import CountUpAnimation from "../sub/Count";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 
 const AboutUs = () => {
+  const [isHoveredUgyen, setIsHoveredUgyen] = useState(false);
+  const [isHoveredPemo, setIsHoveredPemo] = useState(false);
+  const [isHoveredKuenzang, setIsHoveredKuenzang] = useState(false);
+  const [isHoveredPema, setIsHoveredPema] = useState(false);
+  const [isHoveredJamphel, setIsHoveredJamphel] = useState(false);
+  const [isHoveredNamda, setIsHoveredNamda] = useState(false);
+  const [isHoveredNima, setIsHoveredNima] = useState(false);
   return (
     <>
       <div id="aboutus">
@@ -53,98 +60,166 @@ const AboutUs = () => {
               </span>
             </motion.div>
 
-            <div className="flex flex-wrap items-center justify-center pb-8">
-              <div className="mb-16 px-4">
-                <img
-                  src={"/ugyen.jpg"}
-                  alt="img3"
-                  style={{ width: 300, height: 250 }}
-                  className=" md:pl-8"
-                />
-                <p className=" text-[16px] text-white md:pl-8">Ugyen Dendup</p>
-                <p className=" text-[16px] text-gray-400 md:pl-8">
+            <div className="flex flex-wrap items-center justify-center pb-8  ">
+              <div className="mb-16 px-4 relative group z-30">
+                <div className="relative">
+                  <img
+                    src={isHoveredUgyen ? "/coolugyen.jpg" : "/ugyen.jpg"}
+                    alt="original"
+                    style={{
+                      width: 300,
+                      height: 250,
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                    className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
+                    onMouseEnter={() => setIsHoveredUgyen(true)}
+                    onMouseLeave={() => setIsHoveredUgyen(false)}
+                  />
+                </div>
+                <p className="text-[16px] text-white md:pl-8 mt-4">
+                  Ugyen Dendup
+                </p>
+                <p className="text-[16px] text-gray-400 md:pl-8">
                   Chief Executive Officer
                 </p>
               </div>
 
-              <div className="mb-16 px-4">
-                <img
-                  src={"/tsheltrim.jpg"}
-                  alt="img3"
-                  style={{ width: 300, height: 250 }}
-                  className=" md:pl-8"
-                />
-                <p className=" text-[16px] text-white md:pl-8">
+              <div className="mb-16 px-4 relative group z-30">
+                <div className="relative">
+                  <img
+                    src={isHoveredPemo ? "/coolpemo.jpg" : "/tsheltrim.jpg"}
+                    alt="original"
+                    style={{
+                      width: 300,
+                      height: 250,
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                    className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
+                    onMouseEnter={() => setIsHoveredPemo(true)}
+                    onMouseLeave={() => setIsHoveredPemo(false)}
+                  />
+                </div>
+                <p className="text-[16px] text-white md:pl-8 mt-4">
                   Tsheltrim Pemo
                 </p>
-                <p className=" text-[16px] text-gray-400 md:pl-8">
+                <p className="text-[16px] text-gray-400 md:pl-8">
                   Head of Product
                 </p>
               </div>
-              <div className="mb-16 px-4">
-                <img
-                  src={"/kuenzang.jpg"}
-                  alt="img3"
-                  style={{ width: 300, height: 250 }}
-                  className=" md:pl-8"
-                />
-                <p className=" text-[16px] text-white md:pl-8">
+
+              <div className="mb-16 px-4 relative group z-30">
+                <div className="relative">
+                  <img
+                    src={
+                      isHoveredKuenzang ? "/coolkuenzang.jpg" : "/kuenzang.jpg"
+                    }
+                    alt="original"
+                    style={{
+                      width: 300,
+                      height: 250,
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                    className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
+                    onMouseEnter={() => setIsHoveredKuenzang(true)}
+                    onMouseLeave={() => setIsHoveredKuenzang(false)}
+                  />
+                </div>
+                <p className="text-[16px] text-white md:pl-8 mt-4">
                   Kuenzang Namgyal
                 </p>
-                <p className=" text-[16px] text-gray-400 md:pl-8">
+                <p className="text-[16px] text-gray-400 md:pl-8">
                   Head of Fullstack
                 </p>
               </div>
-              <div className="mb-16 px-4">
-                <img
-                  src={"/pema.jpg"}
-                  alt="img3"
-                  style={{ width: 300, height: 250 }}
-                  className="md:pl-8"
-                />
-                <p className=" text-[16px] text-white md:pl-8">Pema</p>
-                <p className=" text-[16px] text-gray-400 md:pl-8">
-                  Head of Cybersecurity
+
+              <div className="mb-16 px-4 relative group z-30">
+                <div className="relative">
+                  <img
+                    src={isHoveredPema ? "/coolpema.jpg" : "/pema.jpg"}
+                    alt="original"
+                    style={{
+                      width: 300,
+                      height: 250,
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                    className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
+                    onMouseEnter={() => setIsHoveredPema(true)}
+                    onMouseLeave={() => setIsHoveredPema(false)}
+                  />
+                </div>
+                <p className="text-[16px] text-white md:pl-8 mt-4">Pema</p>
+                <p className="text-[16px] text-gray-400 md:pl-8">
+                  Head of CyberSecurity
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center justify-center">
-              <div className="mb-16 px-4">
-                <img
-                  src={"/jamphel.jpg"}
-                  alt="img3"
-                  style={{ width: 300, height: 250 }}
-                  className="md:pl-8"
-                />
-                <p className=" text-[16px] text-white md:pl-8">
+              <div className="mb-16 px-4 relative group z-30">
+                <div className="relative">
+                  <img
+                    src={isHoveredJamphel ? "/cooljamphel.jpg" : "/jamphel.jpg"}
+                    alt="original"
+                    style={{
+                      width: 300,
+                      height: 250,
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                    className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
+                    onMouseEnter={() => setIsHoveredJamphel(true)}
+                    onMouseLeave={() => setIsHoveredJamphel(false)}
+                  />
+                </div>
+                <p className="text-[16px] text-white md:pl-8 mt-4">
+                  {" "}
                   Jamphel Yigzin Samdrup
                 </p>
-                <p className=" text-[16px] text-gray-400 md:pl-8">
-                  Cheif Technology Officer
+                <p className="text-[16px] text-gray-400 md:pl-8">
+                  Cheif Technology Officer{" "}
                 </p>
               </div>
-              <div className="mb-16 px-4">
-                <img
-                  src={"/namda.jpg"}
-                  alt="img3"
-                  style={{ width: 300, height: 250 }}
-                  className="md:pl-8"
-                />
-                <p className=" text-[16px] text-white md:pl-8">
+
+              <div className="mb-16 px-4 relative group z-30">
+                <div className="relative">
+                  <img
+                    src={isHoveredNamda ? "/coolnamda.jpg" : "/namda.jpg"}
+                    alt="original"
+                    style={{
+                      width: 300,
+                      height: 250,
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                    className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
+                    onMouseEnter={() => setIsHoveredNamda(true)}
+                    onMouseLeave={() => setIsHoveredNamda(false)}
+                  />
+                </div>
+                <p className="text-[16px] text-white md:pl-8 mt-4">
+                  {" "}
                   Jampel Namdag Dorji
                 </p>
-                <p className=" text-[16px] text-gray-400 md:pl-8">Head of AI</p>
+                <p className="text-[16px] text-gray-400 md:pl-8">Head of AI</p>
               </div>
-              <div className="mb-16 px-4">
-                <img
-                  src={"/Nima.jpg"}
-                  alt="img3"
-                  style={{ width: 300, height: 250 }}
-                  className=" md:pl-8"
-                />
-                <p className=" text-[16px] text-white md:pl-8">Nima Wangdi</p>
-                <p className=" text-[16px] text-gray-400 md:pl-8">
+
+              <div className="mb-16 px-4 relative group z-30">
+                <div className="relative">
+                  <img
+                    src={isHoveredNima ? "/coolnima.jpg" : "/nima.jpg"}
+                    alt="original"
+                    style={{
+                      width: 300,
+                      height: 250,
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                    className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
+                    onMouseEnter={() => setIsHoveredNima(true)}
+                    onMouseLeave={() => setIsHoveredNima(false)}
+                  />
+                </div>
+                <p className="text-[16px] text-white md:pl-8 mt-4">
+                  Nima Wangdi
+                </p>
+                <p className="text-[16px] text-gray-400 md:pl-8">
                   Head of Design
                 </p>
               </div>

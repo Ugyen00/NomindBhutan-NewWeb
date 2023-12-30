@@ -12,7 +12,7 @@ interface Props {
   imageStyles?: React.CSSProperties;
   buttonStyles?: React.CSSProperties;
   cardStyles?: React.CSSProperties;
-  sectionId?: string;
+  link: string;
 }
 
 const Bots = ({
@@ -23,7 +23,7 @@ const Bots = ({
   height,
   imageStyles,
   cardStyles,
-  sectionId,
+  link,
 }: Props) => {
   return (
     <div
@@ -43,7 +43,7 @@ const Bots = ({
         <h1 className="text-2xl font-semibold text-white">{title}</h1>
         <p className="mt-2 text-gray-300">{description}</p>
         <a
-          href="#home"
+          href={link}
           className="cursor-pointer flex items-center justify-center pt-4"
         >
           <motion.div
