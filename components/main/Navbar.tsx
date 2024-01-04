@@ -66,7 +66,12 @@ const Navbar = () => {
           {/* Desktop Dashboard Button */}
           <div className="hidden lg:flex h-auto w-auto flex flex-row items-center">
             <button className="flex items-center justify-between w-full h-auto ml-2 px-2 py-[10px] rounded-full text-gray-200">
-              Dashboard
+              <a
+                href="https://nomindbhutan-dashboard.onrender.com/"
+                className="text-white block"
+              >
+                <button>Dashboard</button>
+              </a>
               <Image
                 src="/arrow.svg"
                 alt="arrow"
@@ -137,7 +142,12 @@ const Navbar = () => {
                   className="cursor-pointer mb-8 relative group"
                   onClick={closeMobileMenu}
                 >
-                  <button className="text-white block">Dashboard</button>
+                  <a
+                    href="https://nomindbhutan-dashboard.onrender.com/"
+                    className="text-white block"
+                  >
+                    <button>Dashboard</button>
+                  </a>
                   <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                 </button>
               </div>
