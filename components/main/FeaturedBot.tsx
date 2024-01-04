@@ -8,12 +8,12 @@ const FeaturedBot = () => {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center py-20 z-30"
+        className="flex flex-col items-center justify-center py-10 z-30"
         id="featuredbot"
       >
         <motion.div
           variants={slideInFromTop}
-          className="text-[40px] font-bold text-center text-gray-200 py-16"
+          className="text-[40px] font-bold text-center text-gray-200 py-6"
         >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             {" "}
@@ -43,27 +43,6 @@ const FeaturedBot = () => {
 
           <div className="text-center">
             <Bots
-              src="/NlcsBot.svg"
-              title="National Land Commission"
-              description="Empowering National Land Commission, our integrated chatbot streamlines inquiries, offers instant assistance, and enhances efficiency in land-related processes."
-              width={400}
-              height={300}
-              imageStyles={{
-                padding: "16px",
-                marginTop: "20px",
-                marginBottom: "10px",
-                paddingBottom: "2px",
-              }}
-              cardStyles={{
-                width: "370px",
-                height: "450px",
-              }}
-              link="https://www.nlcs.gov.bt/"
-            />
-          </div>
-
-          <div className="text-center">
-            <Bots
               src="/BnbBot.svg"
               title="Bhutan National Bank"
               description="Revolutionizing banking, our integrated chatbot at Bank of Bhutan delivers instant assistance, streamlines transactions, and enhances customer service seamlessly."
@@ -81,6 +60,27 @@ const FeaturedBot = () => {
                 height: "450px",
               }}
               link="https://bnb.bt/"
+            />
+          </div>
+
+          <div className="text-center">
+            <Bots
+              src="/NlcsBot.svg"
+              title="National Land Commission"
+              description="Empowering National Land Commission, our integrated chatbot streamlines inquiries, offers instant assistance, and enhances efficiency in land-related processes."
+              width={400}
+              height={300}
+              imageStyles={{
+                padding: "16px",
+                marginTop: "20px",
+                marginBottom: "10px",
+                paddingBottom: "2px",
+              }}
+              cardStyles={{
+                width: "370px",
+                height: "450px",
+              }}
+              link="https://www.nlcs.gov.bt/"
             />
           </div>
         </div>

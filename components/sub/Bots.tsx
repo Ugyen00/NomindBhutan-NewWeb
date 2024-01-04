@@ -25,6 +25,13 @@ const Bots = ({
   cardStyles,
   link,
 }: Props) => {
+  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    const newWindow = window.open(link, "_blank");
+    if (newWindow) {
+      newWindow.focus();
+    }
+  };
   return (
     <div
       className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]"
@@ -45,6 +52,7 @@ const Bots = ({
         <a
           href={link}
           className="cursor-pointer flex items-center justify-center pt-4"
+          onClick={handleLinkClick}
         >
           <motion.div
             variants={slideInFromTop}

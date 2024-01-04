@@ -20,7 +20,7 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className="mt-24 relative z-30 items-center justify-center"
+        className="mt-10 relative z-30 items-center justify-center"
       >
         <div className="flex flex-col mb-16 lg:ml-8 mt-4 md:p-8 text-white items-center justify-center">
           <motion.div
@@ -65,7 +65,7 @@ const Contact = () => {
                 rows={3}
                 name="bio"
                 id="bio"
-                placeholder="Share Your Thoughts"
+                placeholder="What Serivce do you like "
               ></textarea>
             </div>
             <div className="font-light mb-5 z-10">
