@@ -7,7 +7,7 @@ import { SparklesIcon } from "@heroicons/react/20/solid";
 const Contact = () => {
   const googleMapsIframe = (
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1683.5665725097351!2d89.66588626286082!3d27.536154190665425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e19566fa54c4df%3A0x82f8fd359c78d7f5!2sGyalpozhing%20College%20of%20Information%20Technology%20-%20Kabjisa%20Campus!5e0!3m2!1sen!2sbt!4v1702987365288!5m2!1sen!2sbt"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.87127954875!2d89.66374187517484!3d27.53545787628149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e1950035adaadb%3A0x8e7bd97b2adf1f64!2sNoMindBhutan%20headquarters!5e0!3m2!1sen!2sbt!4v1704393720403!5m2!1sen!2sbt"
       width="500"
       height="350"
       style={{ border: 0 }}
