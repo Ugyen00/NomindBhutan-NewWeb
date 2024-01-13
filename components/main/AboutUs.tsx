@@ -35,10 +35,10 @@ const AboutUs = () => {
             className="p-8 md:ml-4 lg:ml-16"
           />
           <p className="text-[20px] text-gray-200 p-8 md:p-16">
-            Introducing our AI Automation Company, pioneering the development of
-            exceptionally friendly AI Solution. Join us as we redefine
-            human-machine interaction, making technology more approachable and
-            engaging.
+            Introducing our NoMindBhutan, AI research and deployment Company,
+            pioneering the development of exceptionally friendly AI Solution.
+            Join us as we redefine human-machine interaction, making technology
+            more approachable and engaging.
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-center text-white mt-8 lg:mt-16">
@@ -64,7 +64,7 @@ const AboutUs = () => {
             <div className="flex flex-wrap items-center justify-center pb-8  ">
               <div className="mb-16 px-4 relative group z-30">
                 <div className="relative">
-                  <img
+                  <Image
                     src={isHoveredUgyen ? "/coolugyen.jpg" : "/ugyen.jpg"}
                     alt="original"
                     style={{
@@ -87,7 +87,7 @@ const AboutUs = () => {
 
               <div className="mb-16 px-4 relative group z-30">
                 <div className="relative">
-                  <img
+                  <Image
                     src={isHoveredPemo ? "/coolpemo.jpg" : "/tsheltrim.jpg"}
                     alt="original"
                     style={{
@@ -110,7 +110,7 @@ const AboutUs = () => {
 
               <div className="mb-16 px-4 relative group z-30">
                 <div className="relative">
-                  <img
+                  <Image
                     src={
                       isHoveredKuenzang ? "/coolkuenzang.jpg" : "/kuenzang.jpg"
                     }
@@ -135,7 +135,7 @@ const AboutUs = () => {
 
               <div className="mb-16 px-4 relative group z-30">
                 <div className="relative">
-                  <img
+                  <Image
                     src={isHoveredPema ? "/coolpema.jpg" : "/pema.jpg"}
                     alt="original"
                     style={{
@@ -158,7 +158,7 @@ const AboutUs = () => {
             <div className="flex flex-wrap items-center justify-center">
               <div className="mb-16 px-4 relative group z-30">
                 <div className="relative">
-                  <img
+                  <Image
                     src={isHoveredJamphel ? "/cooljamphel.jpg" : "/jamphel.jpg"}
                     alt="original"
                     style={{
@@ -182,7 +182,7 @@ const AboutUs = () => {
 
               <div className="mb-16 px-4 relative group z-30">
                 <div className="relative">
-                  <img
+                  <Image
                     src={isHoveredNamda ? "/coolnamda.jpg" : "/namda.jpg"}
                     alt="original"
                     style={{
@@ -204,7 +204,7 @@ const AboutUs = () => {
 
               <div className="mb-16 px-4 relative group z-30">
                 <div className="relative">
-                  <img
+                  <Image
                     src={isHoveredNima ? "/coolnima.jpg" : "/nima.jpg"}
                     alt="original"
                     style={{

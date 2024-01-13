@@ -8,8 +8,9 @@ import Navbar from "@/components/main/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NoMindBhutan",
-  description: "official website of NoMindBhutan",
+  title: "NoMindBhutan | Bhutan's Best R&D Company",
+  description:
+    "NoMindBhutan is Bhutan's Best an AI research and deployment company",
 };
 
 export default function RootLayout({

@@ -22,13 +22,14 @@ const Policy = () => {
             <p className="font-semibold text-xl mb-4 text-white">
               1. INTRODUCTION
             </p>
-            NoMindBhutan ("we", "us", "our") is an AI chatbot provider based in
-            Thimphu, Bhutan. We are committed to protecting and respecting your
-            privacy. This Privacy Policy ("Policy") explains how we collect,
-            use, share, and protect your personal information when you interact
-            with our AI chatbot service. This Policy is designed to help you
-            understand our practices and your rights under applicable privacy
-            laws and regulations.
+            NoMindBhutan (&apos;we&apos;, &apos;us&apos;, &apos;our&apos;) is an
+            AI chatbot provider based in Thimphu, Bhutan. We are committed to
+            protecting and respecting your privacy. This Privacy Policy
+            (&apos;Policy&apos;) explains how we collect, use, share, and
+            protect your personal information when you interact with our AI
+            chatbot service. This Policy is designed to help you understand our
+            practices and your rights under applicable privacy laws and
+            regulations.
           </li>
           <br />
           <li className="text-lg">
@@ -40,7 +41,7 @@ const Policy = () => {
             collect include:
             <br />- User Location: We collect your location data to provide
             personalized services and enhance your user experience.
-            <br /> - Client Data: We collect data from our clients' public
+            <br /> - Client Data: We collect data from our clients&apos; public
             social media pages and websites to improve our AI chatbot service.
           </li>
           <br />

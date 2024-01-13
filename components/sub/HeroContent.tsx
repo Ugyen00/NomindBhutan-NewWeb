@@ -52,7 +52,7 @@ const HeroContent = () => {
               {" "}
               the best{" "}
             </span>
-            AI ChatBot
+            AI Solutions
           </span>
         </motion.div>
 
@@ -60,8 +60,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-wrap text-gray-400 my-8 lg:max-w-[600px]"
         >
-          NoMindBhutan is a pioneering AI chatbot agent startup that is
-          reshaping the way businesses connect with their customers.
+          NoMindBhutan is an Artificial Intelligence research and deployment
+          company. Our mission is to innovate, adapt, and transform the way
+          People interact with AI.
         </motion.p>
         <a
           href="/contact"
