@@ -67,9 +67,9 @@ const AboutUs = () => {
                   <Image
                     src={isHoveredUgyen ? "/coolugyen.jpg" : "/ugyen.jpg"}
                     alt="original"
+                    width={300} // Add the required width property
+                    height={250} // Add the required height property
                     style={{
-                      width: 300,
-                      height: 250,
                       transition: "transform 0.3s ease-in-out",
                     }}
                     className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
@@ -90,9 +90,9 @@ const AboutUs = () => {
                   <Image
                     src={isHoveredPemo ? "/coolpemo.jpg" : "/tsheltrim.jpg"}
                     alt="original"
+                    width={300} // Add the required width property
+                    height={250} // Add the required height property
                     style={{
-                      width: 300,
-                      height: 250,
                       transition: "transform 0.3s ease-in-out",
                     }}
                     className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
@@ -115,9 +115,9 @@ const AboutUs = () => {
                       isHoveredKuenzang ? "/coolkuenzang.jpg" : "/kuenzang.jpg"
                     }
                     alt="original"
+                    width={300} // Add the required width property
+                    height={250} // Add the required height property
                     style={{
-                      width: 300,
-                      height: 250,
                       transition: "transform 0.3s ease-in-out",
                     }}
                     className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
@@ -138,9 +138,9 @@ const AboutUs = () => {
                   <Image
                     src={isHoveredPema ? "/coolpema.jpg" : "/pema.jpg"}
                     alt="original"
+                    width={300} // Add the required width property
+                    height={250} // Add the required height property
                     style={{
-                      width: 300,
-                      height: 250,
                       transition: "transform 0.3s ease-in-out",
                     }}
                     className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
@@ -161,9 +161,9 @@ const AboutUs = () => {
                   <Image
                     src={isHoveredJamphel ? "/cooljamphel.jpg" : "/jamphel.jpg"}
                     alt="original"
+                    width={300} // Add the required width property
+                    height={250} // Add the required height property
                     style={{
-                      width: 300,
-                      height: 250,
                       transition: "transform 0.3s ease-in-out",
                     }}
                     className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
@@ -185,9 +185,9 @@ const AboutUs = () => {
                   <Image
                     src={isHoveredNamda ? "/coolnamda.jpg" : "/namda.jpg"}
                     alt="original"
+                    width={300} // Add the required width property
+                    height={250} // Add the required height property
                     style={{
-                      width: 300,
-                      height: 250,
                       transition: "transform 0.3s ease-in-out",
                     }}
                     className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
@@ -207,9 +207,9 @@ const AboutUs = () => {
                   <Image
                     src={isHoveredNima ? "/coolnima.jpg" : "/nima.jpg"}
                     alt="original"
+                    width={300} // Add the required width property
+                    height={250} // Add the required height property
                     style={{
-                      width: 300,
-                      height: 250,
                       transition: "transform 0.3s ease-in-out",
                     }}
                     className="md:pl-8 transition-transform transform hover:scale-110 object-cover"
