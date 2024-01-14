@@ -35,7 +35,7 @@ const Footer = () => {
               variants={slideInFromTop}
               className="text-[30px] md:pl-16 sm:pt-8]"
             >
-              Let's build
+              Let&aposs build
               <br />
               something
               <br />

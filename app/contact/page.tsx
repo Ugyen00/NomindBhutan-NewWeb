@@ -48,7 +48,6 @@ const Contact = () => {
                 placeholder="Your Name"
               />
             </div>
-
             <div className="mb-8">
               <input
                 className="mt-1 p-2 w-full md:w-[250px] xl:w-[500px] rounded-[10px] border-b border-[#7042f861] text-white bg-transparent outline-none"
@@ -58,7 +57,6 @@ const Contact = () => {
                 placeholder="Your Email"
               />
             </div>
-
             <div className="mb-8">
               <textarea
                 className="mt-1 p-2 w-full md:w-[250px] xl:w-[500px] rounded-[10px] border-b border-[#7042f861] text-white bg-transparent outline-none"
@@ -80,7 +78,6 @@ const Contact = () => {
               </a>
             </div>
           </form>
-
           <div className="lg:pl-16 pb-16 mt-8">{googleMapsIframe}</div>
         </div>
       </div>
