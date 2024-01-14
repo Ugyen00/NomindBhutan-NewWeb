@@ -1,8 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { FaAngleDown } from "react-icons/fa";
+import { faBook, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,7 +35,6 @@ const Navbar = () => {
               className="cursor-pointer hover:animate-slowspin"
             />
           </Link>
-
           {/* Desktop Menu */}
           <div className="hidden lg:flex w-[500px] h-full flex-row items-center justify-between md:mr-30">
             <div className="flex items-center justify-between w-full h-auto mr-[15px] px-[20px] py-[10px] text-gray-200">
@@ -60,9 +62,31 @@ const Navbar = () => {
                   <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                 </button>
               </Link>
+              <div className="relative group">
+                <button className="cursor-pointer relative group flex items-center">
+                  <span className="mr-1">Resources</span>
+                  <FaAngleDown className="text-white" />
+                  <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                </button>
+                <div className="absolute hidden mt-4 backdrop-blur-lg backdrop-filter bg-[#0300145e] bg-opacity-70 border border-[#7042f861] rounded-sm z-10 group-hover:block">
+                  <Link
+                    href="/Guide"
+                    className="px-8 py-2 text-sm text-white flex items-start  hover:text-gray-300"
+                  >
+                    <FontAwesomeIcon icon={faBook} className="mr-2" />
+                    Guide
+                  </Link>
+                  <Link
+                    href="/Blog"
+                    className="px-8 py-2 text-sm text-white flex items-start  hover:text-gray-300"
+                  >
+                    <FontAwesomeIcon icon={faNewspaper} className="mr-2" />
+                    Blog
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
-
           {/* Desktop Dashboard Button */}
           <div className="hidden lg:flex h-auto w-auto flex flex-row items-center">
             <button className="flex items-center justify-between w-full h-auto ml-2 px-2 py-[10px] rounded-full text-gray-200">
