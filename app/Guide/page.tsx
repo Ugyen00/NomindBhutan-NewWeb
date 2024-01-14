@@ -34,7 +34,8 @@ const Guide = () => {
           </li>
 
           <li className="text-lg mb-8 ">
-            2.Navigate to the "Plugin" section and select "Add New."
+            2.Navigate to the &quotPlugin&quot section and select &quotAdd
+            New.&quot
             <Image
               src="/img1.jpg"
               alt="img1"
@@ -45,8 +46,8 @@ const Guide = () => {
           </li>
 
           <li className="text-lg mb-8 ">
-            3.In the search bar, type "WP Code" or "Code" and find the plugin in
-            the WordPress repository.
+            3.In the search bar, type &quotWP Code&quot or &quotCode&quot and
+            find the plugin in the WordPress repository.
             <Image
               src="/img1.jpg"
               alt="img1"
@@ -57,7 +58,8 @@ const Guide = () => {
           </li>
 
           <li className="text-lg mb-8 ">
-            4.Click "Install Now" and let the installation process complete.
+            4.Click &quotInstall Now&quot and let the installation process
+            complete.
             <Image
               src="/img1.jpg"
               alt="img1"
@@ -71,8 +73,8 @@ const Guide = () => {
             <p className="font-semibold text-xl mb-4 text-white">
               Step 2: Activate WP Code Plugin
             </p>
-            1.After installation, click on "Activate" to enable the WP Code
-            plugin.
+            1.After installation, click on &quotActivate&quot to enable the WP
+            Code plugin.
             <Image
               src="/img1.jpg"
               alt="img1"
@@ -97,7 +99,7 @@ const Guide = () => {
           </li>
 
           <li className="text-lg mb-8 ">
-            2.Click on "Code Snippets" to access its settings.
+            2.Click on &quotCode Snippets&quot to access its settings.
             <Image
               src="/img1.jpg"
               alt="img1"
@@ -111,7 +113,8 @@ const Guide = () => {
             <p className="font-semibold text-xl mb-4 text-white">
               Step 4: Go to Headers and Footers Section
             </p>
-            1.Within the Code Snippets, find and click on "Headers and Footers."
+            1.Within the Code Snippets, find and click on &quotHeaders and
+            Footers.&quot
             <Image
               src="/img1.jpg"
               alt="img1"
@@ -125,8 +128,8 @@ const Guide = () => {
             <p className="font-semibold text-xl mb-4 text-white">
               Step 5: Add Code to Header or Footer
             </p>
-            1.In the "Headers and Footers" section, you'll see header, footer,
-            and body section.{" "}
+            1.In the &quotHeaders and Footers&quot section, you&aposll see
+            header, footer, and body section.{" "}
             <Image
               src="/img1.jpg"
               alt="img1"
@@ -163,7 +166,7 @@ const Guide = () => {
             1.If neeed, you can deactivate the plugin temporarily without losing
             your code snippets.
             <br />
-            2.Deactivating the plugin won't permanently delete your changes.{" "}
+            2.Deactivating the plugin won&apost permanently delete your changes.{" "}
             <br />
             3.Reactivate the plugin when necessary, and your code snippets will
             persist.
@@ -173,8 +176,8 @@ const Guide = () => {
             <p className="font-semibold text-xl mb-4 text-white">
               Step 8: Delete Code Snippet (Optional)
             </p>
-            1.To remove a code snippet, go back to the "Headers and Footers"
-            section.
+            1.To remove a code snippet, go back to the &quotHeaders and
+            Footers&quot section.
             <br />
             2.Locate the code snippet you want to delete, make the necessary
             changes, and save.

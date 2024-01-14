@@ -10,7 +10,7 @@ const Services = () => {
       <motion.div
         id="services"
         variants={slideInFromTop}
-        className="text-[30px] sm:text-[40px] font-bold text-center sm:mb-4 sm:py-8 sm:pt-16 text-white"
+        className="text-[30px] sm:text-[40px] font-bold text-center sm:mb-2 sm:py-8 sm:pt-16 text-white"
       >
         SERVICES
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -24,7 +24,7 @@ const Services = () => {
           <div className="xl:mr-12 p-4 ml-4">
             <motion.div
               variants={slideInFromTop}
-              className="text-[20px] sm:text-[35px] mb-4 sm:mb-8  font-bold"
+              className="text-[20px] sm:text-[35px] mb-4 sm:mb-8 font-bold"
             >
               AI
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -40,7 +40,7 @@ const Services = () => {
               operational efficiency.
             </p>
 
-            <a href="/contact" className="cursor-pointer flex pt-8 ">
+            <a href="/contact" className="cursor-pointer flex pt-8">
               <motion.div
                 variants={slideInFromTop}
                 className="Welcome-box py-[6px] px-[15px] sm:py-[10px] sm:px-[25px] border border-[#7042f88b] opacity-[0.9]"

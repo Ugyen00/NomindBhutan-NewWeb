@@ -27,13 +27,15 @@ const Navbar = () => {
             href="/#home"
             className="h-auto w-auto flex flex-row items-center"
           >
-            <Image
-              src="/NavLogo.png"
-              alt="logo"
-              width={200}
-              height={110}
-              className="cursor-pointer hover:animate-slowspin"
-            />
+            {typeof window !== "undefined" && (
+              <Image
+                src="/NavLogo.png"
+                alt="logo"
+                width={200}
+                height={110}
+                className="cursor-pointer hover:animate-slowspin"
+              />
+            )}
           </Link>
           {/* Desktop Menu */}
           <div className="hidden lg:flex w-[500px] h-full flex-row items-center justify-between md:mr-30">

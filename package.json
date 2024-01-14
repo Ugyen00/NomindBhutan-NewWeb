@@ -14,6 +14,7 @@
     "@heroicons/react": "^2.0.18",
     "@next/react-refresh-utils": "^14.0.4",
     "@react-google-maps/api": "^2.19.2",
+    "@remix-run/router": "^1.14.2",
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
