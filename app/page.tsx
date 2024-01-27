@@ -22,6 +22,9 @@ export default function Home() {
       <Router>
         <Routes>
           <Route path="/contact" />
+          <Route path="/Blog" />
+          <Route path="/Policy" />
+          <Route path="/Guide" />
         </Routes>
       </Router>
     </main>

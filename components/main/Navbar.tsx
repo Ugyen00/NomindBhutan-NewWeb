@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [dashboardOffset, setDashboardOffset] = useState(0);
+  const [isResourcesOpen, setResourcesOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -16,6 +18,8 @@ const Navbar = () => {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    setResourcesOpen(false);
+    setDashboardOffset(0);
   };
 
   return (
@@ -27,17 +31,19 @@ const Navbar = () => {
             href="/#home"
             className="h-auto w-auto flex flex-row items-center"
           >
-            <Image
-              src="/NavLogo.png"
-              alt="logo"
-              width={200}
-              height={110}
-              className="cursor-pointer hover:animate-slowspin"
-            />
+            {typeof window !== "undefined" && (
+              <Image
+                src="/NavLogo.png"
+                alt="logo"
+                width={200}
+                height={110}
+                className="cursor-pointer hover:animate-slowspin"
+              />
+            )}
           </Link>
           {/* Desktop Menu */}
           <div className="hidden lg:flex w-[500px] h-full flex-row items-center justify-between md:mr-30">
-            <div className="flex items-center justify-between w-full h-auto mr-[15px] px-[20px] py-[10px] text-gray-200">
+            <div className="flex items-center justify-between w-full h-auto mr-[15px] px-[5px] py-[10px] text-gray-200">
               <Link href="/#services" passHref>
                 <button className="cursor-pointer relative group">
                   Services
@@ -63,24 +69,24 @@ const Navbar = () => {
                 </button>
               </Link>
               <div className="relative group">
-                <button className="cursor-pointer relative group flex items-center">
+                <button className="cursor-pointer relative group flex items-center transition-transform duration-300 delay-300">
                   <span className="mr-1">Resources</span>
                   <FaAngleDown className="text-white" />
-                  <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 "></span>
                 </button>
-                <div className="absolute hidden mt-4 backdrop-blur-lg backdrop-filter bg-[#0300145e] bg-opacity-70 border border-[#7042f861] rounded-sm z-10 group-hover:block">
+                <div className="absolute hidden mt-3 backdrop-blur-lg backdrop-filter bg-[#0300145e] bg-opacity-70 border border-[#7042f861] rounded-md z-10 group-hover:block transition-transform duration-300">
                   <Link
                     href="/Guide"
-                    className="px-8 py-2 text-sm text-white flex items-start  hover:text-gray-300"
+                    className="px-10 py-4 text-md text-white flex items-start  hover:text-gray-300"
                   >
-                    <FontAwesomeIcon icon={faBook} className="mr-2" />
+                    <FontAwesomeIcon icon={faBook} className="mr-4 mt-1" />
                     Guide
                   </Link>
                   <Link
                     href="/Blog"
-                    className="px-8 py-2 text-sm text-white flex items-start  hover:text-gray-300"
+                    className="px-10 py-4 text-md text-white flex items-start  hover:text-gray-300"
                   >
-                    <FontAwesomeIcon icon={faNewspaper} className="mr-2" />
+                    <FontAwesomeIcon icon={faNewspaper} className="mr-4 mt-1" />
                     Blog
                   </Link>
                 </div>
@@ -126,7 +132,7 @@ const Navbar = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="flex flex-col items-end mr-16 py-10">
-                <Link href="/#services" passHref>
+                <a href="/#services">
                   <button
                     className="text-white block cursor-pointer mt-8 mb-8 relative group"
                     onClick={closeMobileMenu}
@@ -134,8 +140,8 @@ const Navbar = () => {
                     Services
                     <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </button>
-                </Link>
-                <Link href="/#pricing" passHref>
+                </a>
+                <a href="/#pricing">
                   <button
                     className="text-white block cursor-pointer mb-8 relative group"
                     onClick={closeMobileMenu}
@@ -143,8 +149,8 @@ const Navbar = () => {
                     Pricing
                     <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </button>
-                </Link>
-                <Link href="/#aboutus" passHref>
+                </a>
+                <a href="/#aboutus">
                   <button
                     className="text-white block cursor-pointer mb-8 relative group"
                     onClick={closeMobileMenu}
@@ -152,8 +158,8 @@ const Navbar = () => {
                     About Us
                     <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </button>
-                </Link>
-                <Link href="/#featuredbot" passHref>
+                </a>
+                <a href="/#featuredbot">
                   <button
                     className="text-white block cursor-pointer mb-8 relative group"
                     onClick={closeMobileMenu}
@@ -161,10 +167,51 @@ const Navbar = () => {
                     Featured Bot
                     <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </button>
-                </Link>
+                </a>
+                <div className="relative group mb-8">
+                  <button
+                    className="cursor-pointer relative group flex items-center"
+                    onClick={() => {
+                      setResourcesOpen(!isResourcesOpen);
+                      setDashboardOffset(isResourcesOpen ? 0 : 50);
+                    }}
+                  >
+                    <span className="text-white mr-1">Resources</span>
+                    <FaAngleDown
+                      className={`text-white ${
+                        isResourcesOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                    <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-right transform scale-x-0 transition-transform duration-300"></span>
+                  </button>
+                  <div
+                    className={`absolute ${
+                      isResourcesOpen ? "block" : "hidden"
+                    } mt-4 z-10`}
+                  >
+                    <a
+                      href="/Guide"
+                      className="px-8 py-2 text-sm text-white flex items-start hover:text-gray-300"
+                      onClick={closeMobileMenu}
+                    >
+                      <FontAwesomeIcon icon={faBook} className="mr-2" />
+                      Guide
+                    </a>
+                    <Link
+                      href="/Blog"
+                      className="px-8 py-2 text-sm text-white flex items-start hover:text-gray-300"
+                      onClick={closeMobileMenu}
+                    >
+                      <FontAwesomeIcon icon={faNewspaper} className="mr-2" />
+                      Blog
+                    </Link>
+                  </div>
+                </div>
+
                 <button
                   className="cursor-pointer mb-8 relative group"
                   onClick={closeMobileMenu}
+                  style={{ transform: `translateY(${dashboardOffset}px)` }}
                 >
                   <a
                     href="https://nomindbhutan-dashboard.onrender.com/"
