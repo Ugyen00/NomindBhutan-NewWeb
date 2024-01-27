@@ -35,10 +35,10 @@ const AboutUs = () => {
             className="p-8 md:ml-4 lg:ml-16"
           />
           <p className="text-[20px] text-gray-200 p-8 md:p-16">
-            Introducing our NoMindBhutan, AI research and deployment Company,
-            pioneering the development of exceptionally friendly AI Solution.
-            Join us as we redefine human-machine interaction, making technology
-            more approachable and engaging.
+            Introducing NoMindBhutan, an AI research and deployment Company,
+            pioneering the research and development of exceptionally friendly AI
+            Solution. Join us as we redefine human-machine interaction, making
+            technology more approachable and engaging.
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-center text-white mt-8 lg:mt-16">
