@@ -10,11 +10,7 @@ const Services = () => {
       <motion.div
         id="services"
         variants={slideInFromTop}
-<<<<<<< HEAD
-        className="text-[30px] sm:text-[40px] font-bold text-center sm:py-4 sm:pt-16 text-white"
-=======
         className="text-[30px] sm:text-[40px] font-bold text-center sm:mb-2 sm:py-8 sm:pt-16 text-white"
->>>>>>> 2f01025b7167988acfeae3fe79634b6eedd32d82
       >
         SERVICES
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">

@@ -9,15 +9,9 @@ const Blog = () => {
   const blogs = [
     {
       id: 1,
-      title: "Blog 1",
-      desc: "this is blog description",
-      coverImg: "/img1.jpg",
-    },
-    {
-      id: 2,
-      title: "Blog 2",
-      desc: "this is blog description",
-      coverImg: "/img1.jpg",
+      title: "Bhutan’s Silicon Happiness: A Glimpse into the AI Revolution",
+      desc: "Bhutan, also known as the Land of the Thunder Dragon, is a small country located in the eastern Himalayas, bordered by India to the south and China to the north. Bhutan has long been revered for its pristine landscapes, rich cultural heritage...",
+      coverImg: "/poster.jpg",
     },
   ];
   return (
@@ -38,8 +32,8 @@ const Blog = () => {
           </p>
         </div>
 
-        <div className="max-w-[1240px] mx-auto ">
-          <div className="grid  md:grid-cols-2 gap-8 px-4 text-white ">
+        <div className="max-w-[1000px] mx-auto ">
+          <div className="grid gap-8 px-4 text-white ">
             {blogs.map((blog) => (
               <Link
                 key={blog.id}
@@ -52,6 +46,7 @@ const Blog = () => {
                   <Image
                     src={blog.coverImg}
                     alt="img1"
+                    layout="responsive"
                     width={100}
                     height={56}
                     className="w-full object-cover"

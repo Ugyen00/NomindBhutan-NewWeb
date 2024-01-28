@@ -17,16 +17,17 @@ const Blog1 = () => {
               >
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                   {" "}
-                  Learn to Code or Code to Learn?
+                  Bhutan’s Silicon Happiness: A Glimpse into the AI Revolution{" "}
                 </span>
               </motion.div>
               <p className="text-lg md:text-xl my-1 text-center pt-4 text-gray-400">
-                By Zangmo
+                By Tsheltrim Pemo
               </p>
 
               <Image
-                src="/img1.jpg"
+                src="/poster.jpg"
                 alt="img1"
+                layout="responsive"
                 width={100}
                 height={56}
                 className="w-full object-cover p-8 md:p-16"
@@ -34,81 +35,96 @@ const Blog1 = () => {
 
               <div className="pt-5 text-wrap p-4 md:p-0">
                 <p>
-                  The standard Lorem Ipsum passage, used since the 1500s "Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum." Section 1.10.32 of "de Finibus
-                  Bonorum et Malorum", written by Cicero in 45 BC "Sed ut
-                  perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                  consequuntur magni dolores eos qui ratione voluptatem sequi
-                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                  dolor sit amet, consectetur, adipisci velit, sed quia non
-                  numquam eius modi tempora incidunt ut labore et dolore magnam
-                  aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                  nostrum exercitationem ullam corporis suscipit laboriosam,
-                  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
-                  iure reprehenderit qui in ea voluptate velit esse quam nihil
-                  molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                  voluptas nulla pariatur?" 1914 translation by H. Rackham "But
-                  I must explain to you how all this mistaken idea of denouncing
-                  pleasure and praising pain was born and I will give you a
-                  complete account of the system, and expound the actual
-                  teachings of the great explorer of the truth, the
-                  master-builder of human happiness. No one rejects, dislikes,
-                  or avoids pleasure itself, because it is pleasure, but because
-                  those who do not know how to pursue pleasure rationally
-                  encounter consequences that are extremely painful. Nor again
-                  is there anyone who loves or pursues or desires to obtain pain
-                  of itself, because it is pain, but because occasionally
-                  circumstances occur in which toil and pain can procure him
-                  some great pleasure. To take a trivial example, which of us
-                  ever undertakes laborious physical exercise, except to obtain
-                  some advantage from it? But who has any right to find fault
-                  with a man who chooses to enjoy a pleasure that has no
-                  annoying consequences, or one who avoids a pain that produces
-                  no resultant pleasure?" Section 1.10.33 of "de Finibus Bonorum
-                  et Malorum", written by Cicero in 45 BC "At vero eos et
-                  accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque corrupti quos dolores et
-                  quas molestias excepturi sint occaecati cupiditate non
-                  provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum
-                  quidem rerum facilis est et expedita distinctio. Nam libero
-                  tempore, cum soluta nobis est eligendi optio cumque nihil
-                  impedit quo minus id quod maxime placeat facere possimus,
-                  omnis voluptas assumenda est, omnis dolor repellendus.
-                  Temporibus autem quibusdam et aut officiis debitis aut rerum
-                  necessitatibus saepe eveniet ut et voluptates repudiandae sint
-                  et molestiae non recusandae. Itaque earum rerum hic tenetur a
-                  sapiente delectus, ut aut reiciendis voluptatibus maiores
-                  alias consequatur aut perferendis doloribus asperiores
-                  repellat." 1914 translation by H. Rackham "On the other hand,
-                  we denounce with righteous indignation and dislike men who are
-                  so beguiled and demoralized by the charms of pleasure of the
-                  moment, so blinded by desire, that they cannot foresee the
-                  pain and trouble that are bound to ensue; and equal blame
-                  belongs to those who fail in their duty through weakness of
-                  will, which is the same as saying through shrinking from toil
-                  and pain. These cases are perfectly simple and easy to
-                  distinguish. In a free hour, when our power of choice is
-                  untrammelled and when nothing prevents our being able to do
-                  what we like best, every pleasure is to be welcomed and every
-                  pain avoided. But in certain circumstances and owing to the
-                  claims of duty or the obligations of business it will
-                  frequently occur that pleasures have to be repudiated and
-                  annoyances accepted. The wise man therefore always holds in
-                  these matters to this principle of selection: he rejects
-                  pleasures to secure other greater pleasures, or else he
-                  endures pains to avoid worse pains."
+                  Bhutan, also known as the Land of the Thunder Dragon, is a
+                  small country located in the eastern Himalayas, bordered by
+                  India to the south and China to the north. Bhutan has long
+                  been revered for its pristine landscapes, rich cultural
+                  heritage, and the pursuit of Gross National Happiness. While
+                  technologies were flourishing globally, Bhutan remained
+                  isolated from these advancements until the modernization era
+                  started about 20 years ago. Bhutan was late adopters of
+                  technology, as evidenced by the fact that their first
+                  television broadcast occurred in 1999.
+                  <br />
+                  <br />
+                  However, even after being the late technological adopter there
+                  has been significant improvement and advancement in
+                  information communications technology (ICT). The internet
+                  access in Bhutan has significantly increased to 85.6% of the
+                  population in 2021 from around 14.4% in 2011. The government
+                  also launched the Government to Citizen (G2C) program in 2005
+                  which has made the services efficient.
+                  <br />
+                  <br />
+                  In 2017, Bhutan took a significant step by establishing its
+                  first ICT (Information and Communication Technology) college,
+                  known as Gyalposhing College of Information Technology (GCIT).
+                  This institution was set up to provide education and training
+                  in the field of technology. Following its establishment, the
+                  college expanded its offerings. They introduced additional IT
+                  courses and training programs to enhance the skills of
+                  students in various aspects of information technology. Over
+                  the subsequent years, the college further broadened its
+                  curriculum to include new areas of specialization. One
+                  noteworthy addition was the inclusion of subjects related to
+                  Artificial Intelligence (AI) and Data Science. The
+                  introduction of AI and Data Science courses aimed to equip
+                  Bhutanese students with specialized knowledge and skills in
+                  these emerging and critical areas of technology. This
+                  initiative reflects Bhutan's commitment to staying current
+                  with global technological trends and ensuring that its
+                  students are well-prepared for the challenges and
+                  opportunities in the rapidly evolving digital landscape.
+                  <br />
+                  <br />
+                  In a dynamic world driven by technological progress, the
+                  collaboration between the Department of Innovation &
+                  Technology (InnoTech) under Druk Holding & Investments (DHI)
+                  and Omdena stands as a testament to the transformative power
+                  of partnerships. In 2023, this alliance harnessed the
+                  capabilities of artificial intelligence (AI) to tackle
+                  pressing challenges and empower local communities in Bhutan.
+                  Notably, the Omdena Academy, a joint initiative, provided 50
+                  participants with comprehensive data science courses,
+                  fostering hands-on expertise in data analysis, machine
+                  learning, and data visualization. The culmination of this
+                  program saw 45 graduates, showcasing their commitment to
+                  knowledge acquisition. The collaboration also extended to
+                  impactful initiatives such as the AI for Social Impact
+                  Ideathon, where innovative ideas were solicited to address
+                  local challenges. The winning concept, "Digitizing Bhutanese
+                  Documents and Books for Accessibility With Machine Translation
+                  and NLP," spurred a transformative project to enhance
+                  knowledge accessibility.
+                  <br />
+                  <br />
+                  Furthermore, the Omdena AI Innovation Challenge focused on
+                  digitizing content for Dzongkha, Bhutan's national language,
+                  presenting a groundbreaking language translation system. A
+                  dedicated MLOps hybrid course and the development of an
+                  Automated Forest Fire Detection and Early Warning System in
+                  Thimphu exemplify the diverse and impactful outcomes of this
+                  collaboration, reinforcing Bhutan's position at the forefront
+                  of technological innovation and community development. The
+                  Bhutan and Omdena Partnership, formed in 2023, showcases the
+                  power of collaboration and innovation. By providing practical
+                  skills, fostering transformative ideas, and leveraging AI for
+                  positive impact, the partnership has significantly contributed
+                  to Bhutan's progress. This collaboration has empowered a new
+                  generation of local AI leaders, driving technological
+                  advancements and safeguarding natural resources.
+                  <br />
+                  <br />
+                  Looking ahead, Bhutan is set to further develop its
+                  capabilities in AI and data science, as seen through
+                  initiatives like the GCIT and collaborations with InnoTech and
+                  Omdena. With a practical focus on innovation and addressing
+                  local challenges, Bhutan's steady commitment to technological
+                  progress positions it as a growing player in the field of
+                  artificial intelligence. As the nation continues to explore
+                  the possibilities of AI, the future holds promise for
+                  incremental advancements and integration within its evolving
+                  technological landscape.
                 </p>
               </div>
             </div>
