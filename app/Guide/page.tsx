@@ -23,16 +23,16 @@ const Guide = () => {
           User Guide{" "}
         </span>
       </motion.div>
-      <div className="flex justify-center ml-8 md:ml-32">
+      <div className="flex relative z-30 justify-center ml-8 md:ml-32">
         <div className="w-1/4 min-h-screen overflow-hidden">
-          <ul>
+          <ul className="fixed overflow-y-auto">
             <li
-              className={`text-white font-semibold text-xl md:text-2xl mb-8 z-[30] cursor-pointer ${
+              className={`text-white font-semibold text-xl md:text-2xl mb-8 cursor-pointer ${
                 selectedStep === 1 ? "text-purple-500" : ""
               } `}
             >
               <button
-                className="z-[30] cursor-pointer flex items-end"
+                className="flex items-end"
                 onClick={() => handleStepClick(1)}
               >
                 1.Embed On Site
@@ -46,7 +46,7 @@ const Guide = () => {
               }`}
             >
               <button
-                className="z-[30] cursor-pointer flex items-end"
+                className="flex items-end"
                 onClick={() => handleStepClick(2)}
               >
                 2.Whatsapp Integration{" "}
@@ -231,7 +231,9 @@ const Guide = () => {
             </ul>
           )}
 
-          {selectedStep === 2 && <ul>Hello</ul>}
+          {selectedStep === 2 && (
+            <ul className="text-white text-lg">UPDATES COMING SOON</ul>
+          )}
         </div>
       </div>
     </>
