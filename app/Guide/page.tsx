@@ -99,8 +99,7 @@ const Guide = () => {
                   className="cursor-pointer flex items-end"
                   onClick={() => handleStepClick(2)}
                 >
-                  2.Whatsapp Integration{" "}
-                  <FaAngleRight className="text-white pb-1" />
+                  2.Dashboard <FaAngleRight className="text-white pb-1" />
                 </button>
               </li>
             </ul>
