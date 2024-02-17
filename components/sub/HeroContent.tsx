@@ -60,7 +60,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-wrap text-gray-400 my-8 lg:max-w-[600px]"
         >
-          NoMindBhutan is an Artificial Intelligence research and deployment
+          NoMindBhutan is an Artificial Intelligence research and development
           company. Our mission is to innovate, adapt, and transform the way
           People interact with AI.
         </motion.p>

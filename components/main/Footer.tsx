@@ -35,7 +35,7 @@ const Footer = () => {
               variants={slideInFromTop}
               className="text-[30px] md:pl-16 sm:pt-8]"
             >
-              Let&aposs build
+              Let &apos s build
               <br />
               something
               <br />
@@ -61,7 +61,7 @@ const Footer = () => {
             <p className="font-semibold mb-2">Quick Links</p>
             <ul className="font-light">
               <li className="cursor-pointer relative group mb-2">
-                <Link href="/PrivacyPolicy" passHref>
+                <Link href="/Policy" passHref>
                   Privacy Policy{" "}
                   <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                 </Link>
