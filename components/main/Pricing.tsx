@@ -178,7 +178,7 @@ const Pricing = () => {
         >
           <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             {" "}
-            ADD{" "}
+            ADD{"-"}
           </span>
           ONs
         </motion.div>
