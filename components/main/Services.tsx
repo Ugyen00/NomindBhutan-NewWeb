@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import Image from "next/image";
+import whiteBot from "../../public/svg/white.svg";
 
 const Services = () => {
   return (
@@ -188,6 +189,27 @@ const Services = () => {
         </div>
         <p className="text-gray-200 text-[16px] sm:text-[18px] text-center ml-2 sm:ml-0 mb-8 before:sm:mb-16 md:mb-32">
           Integration on various apps without having hard time to code
+        </p>
+      </div>
+
+      <div className="mt-4">
+        <motion.div
+          variants={slideInFromTop}
+          className="text-[20px] sm:text-[40px] font-bold text-center text-white"
+        >
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            {" "}
+            HEART{" "}
+          </span>
+          OF NOLA
+        </motion.div>
+        <div className="flex w-full items-center justify-center  my-36">
+          <button className="bg-black cursor-pointer border border-white h-[130px] w-[130px] text-center flex flex-col justify-center items-center rounded-full uppercase text-lg transition-all duration-75 ease ripple">
+            <Image src={whiteBot} alt="whiteBot" className="w-20 h-auto" />
+          </button>
+        </div>
+        <p className="text-gray-200 text-sm text-center ml-2 sm:ml-0 mb-8 before:sm:mb-16 md:mb-32">
+          Nola will one day speak
         </p>
       </div>
     </>
