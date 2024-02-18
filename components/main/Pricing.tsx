@@ -71,13 +71,13 @@ const Pricing = () => {
                 time="per month"
                 description="For small businesses with big ambitions"
                 features={[
-                  "1000 messages per month ",
+                  "500 messages per month ",
                   "Dashboard access",
                   "Chatbot interface setting access ",
                   "View conversation",
-                  "Live chat",
+                  "Booking System",
                 ]}
-                price="Nu.1500"
+                price="Nu.2000"
                 cardStyles={{
                   width: "400px",
                   height: "600px",
@@ -92,6 +92,7 @@ const Pricing = () => {
                   "Dashboard access",
                   "Chatbot interface setting access ",
                   "View conversation",
+                  "Booking System",
                   "Live chat",
                   "Remove Watermark",
                   "Insights/Analytics monthly",
@@ -129,7 +130,7 @@ const Pricing = () => {
                   "View conversation",
                   "Live chat",
                 ]}
-                price="Nu.16,500"
+                price="Nu.22,000"
                 cardStyles={{
                   width: "400px",
                   height: "600px",
@@ -171,7 +172,7 @@ const Pricing = () => {
           )}
         </div>
       </div>
-      <div className="z-[30] px-[5px]">
+      {/* <div className="z-[30] px-[5px]">
         <motion.div
           variants={slideInFromTop}
           className="text-[35px] font-semibold text-center text-gray-200"
@@ -328,9 +329,9 @@ const Pricing = () => {
                 <h1 className="Welcome-text text-[13px]">PURCHASE NOW</h1>
               </motion.div>
             </a>
-          </div>
-        </div>
-      </div>
+          </div> */}
+      {/* </div> */}
+      {/* </div> */}
     </>
   );
 };
