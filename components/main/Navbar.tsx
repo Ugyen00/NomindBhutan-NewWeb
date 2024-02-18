@@ -10,10 +10,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [dashboardOffset, setDashboardOffset] = useState(0);
+  // const [isResourcesOpen, setResourcesOpen] = useState(false);
   const [isResourcesOpen, setResourcesOpen] = useState(false);
 
+  // const toggleMobileMenu = () => {
+  //   setIsMobileMenuOpen(!isMobileMenuOpen);
+  // };
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    setResourcesOpen(false);
   };
 
   const closeMobileMenu = () => {
@@ -200,22 +205,23 @@ const Navbar = () => {
                   <div
                     className={`absolute ${
                       isResourcesOpen ? "block" : "hidden"
-                    } mt-4 z-10`}
+                    } mt-3 backdrop-blur-lg backdrop-filter bg-[#0300145e] bg-opacity-70 border border-[#7042f861] rounded-md z-10`}
                   >
-                    <a
+                    <Link
                       href="/Guide"
-                      className="px-8 py-2 text-sm text-white flex items-start hover:text-gray-300"
-                      onClick={closeMobileMenu}
+                      className="px-10 py-4 text-md text-white flex items-start  hover:text-gray-300"
                     >
-                      <FontAwesomeIcon icon={faBook} className="mr-2" />
+                      <FontAwesomeIcon icon={faBook} className="mr-4 mt-1" />
                       Guide
-                    </a>
+                    </Link>
                     <Link
                       href="/Blog"
-                      className="px-8 py-2 text-sm text-white flex items-start hover:text-gray-300"
-                      onClick={closeMobileMenu}
+                      className="px-10 py-4 text-md text-white flex items-start  hover:text-gray-300"
                     >
-                      <FontAwesomeIcon icon={faNewspaper} className="mr-2" />
+                      <FontAwesomeIcon
+                        icon={faNewspaper}
+                        className="mr-4 mt-1"
+                      />
                       Blog
                     </Link>
                   </div>
