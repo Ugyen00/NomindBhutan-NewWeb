@@ -22,6 +22,12 @@ const Navbar = () => {
     setDashboardOffset(0);
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       {/* Main Navbar */}
@@ -69,22 +75,29 @@ const Navbar = () => {
                 </button>
               </Link>
               <div className="relative group">
-                <button className="cursor-pointer relative group flex items-center transition-transform duration-300 delay-300">
+                <button
+                  className="flex items-center transition-transform duration-300 delay-300"
+                  onClick={handleButtonClick}
+                >
                   <span className="mr-1">Resources</span>
                   <FaAngleDown className="text-white" />
                   <span className="absolute left-0 right-0 bg-white h-0.5 bottom-0 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 "></span>
                 </button>
-                <div className="absolute hidden mt-3 backdrop-blur-lg backdrop-filter bg-[#0300145e] bg-opacity-70 border border-[#7042f861] rounded-md z-10 group-hover:block transition-transform duration-300">
+                <div
+                  className={`absolute ${
+                    isOpen ? "block" : "hidden"
+                  } mt-3 backdrop-blur-lg backdrop-filter bg-[#0300145e] bg-opacity-70 border border-[#7042f861] rounded-md z-10 transition-transform duration-300`}
+                >
                   <Link
                     href="/Guide"
-                    className="px-10 py-4 text-md text-white flex items-start  hover:text-gray-300"
+                    className="px-10 py-4 text-md text-white flex items-start hover:text-gray-300"
                   >
                     <FontAwesomeIcon icon={faBook} className="mr-4 mt-1" />
                     Guide
                   </Link>
                   <Link
                     href="/Blog"
-                    className="px-10 py-4 text-md text-white flex items-start  hover:text-gray-300"
+                    className="px-10 py-4 text-md text-white flex items-start hover:text-gray-300"
                   >
                     <FontAwesomeIcon icon={faNewspaper} className="mr-4 mt-1" />
                     Blog
