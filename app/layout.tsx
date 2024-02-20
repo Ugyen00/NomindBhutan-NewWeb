@@ -4,6 +4,7 @@ import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
 import Footer from "@/components/main/Footer";
 import Navbar from "@/components/main/Navbar";
+import Chatbot from "@/components/main/Chatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Chatbot />
       </body>
     </html>
   );

@@ -37,7 +37,7 @@ const Blog = () => {
             {blogs.map((blog) => (
               <Link
                 key={blog.id}
-                href={`/Blog/Blog${blog.id}`}
+                href={`/blog/blog${blog.id}`}
                 className="z-[30] cursor-pointer"
                 passHref
               >

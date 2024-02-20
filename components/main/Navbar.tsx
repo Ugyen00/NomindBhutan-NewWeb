@@ -94,14 +94,14 @@ const Navbar = () => {
                   } mt-3 backdrop-blur-lg backdrop-filter bg-[#0300145e] bg-opacity-70 border border-[#7042f861] rounded-md z-10 transition-transform duration-300`}
                 >
                   <Link
-                    href="/Guide"
+                    href="/guide"
                     className="px-10 py-4 text-md text-white flex items-start hover:text-gray-300"
                   >
                     <FontAwesomeIcon icon={faBook} className="mr-4 mt-1" />
                     Guide
                   </Link>
                   <Link
-                    href="/Blog"
+                    href="/blog"
                     className="px-10 py-4 text-md text-white flex items-start hover:text-gray-300"
                   >
                     <FontAwesomeIcon icon={faNewspaper} className="mr-4 mt-1" />
