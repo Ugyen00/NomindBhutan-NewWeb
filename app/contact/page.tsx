@@ -3,6 +3,20 @@ import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/20/solid";
+import { useState } from "react";
+import {sendContactForm} from "../../lib/api";
+
+let initialState = {
+  name:"",
+  email:"",
+  bio:""
+}
+
+// let initialTouchedElement = {
+//   name:false,
+//   email:false,
+//   bio:false
+// }
 
 const Contact = () => {
   const googleMapsIframe = (
@@ -16,6 +30,26 @@ const Contact = () => {
       referrerPolicy="no-referrer-when-downgrade"
     />
   );
+
+  const [formData, setFormData] = useState(initialState);
+  // const [touchedElement, setTouchedElement] = useState(initialTouchedElement);
+
+  const handleChange = (e:any) => setFormData((prev) => ({...prev,[e.target.name] : e.target.value}))
+  // const onBlur = (e) => setTouchedElement((prev) => ({...prev,[e.target.name]: true}));
+  
+  const handleFormSubmit = async(e:any) => {
+    e.preventDefault();
+
+    // use isLoading for showing a loading effect
+    setFormData((prev) => ({...prev,isLoading:true}))
+
+    console.log("submitted");
+
+    //Sending the data
+    const {name,email,bio} = formData;
+    await sendContactForm({name,email,bio});
+  }
+
   return (
     <>
       <div
@@ -40,12 +74,16 @@ const Contact = () => {
         </div>
 
         <div className="lg:ml-16 lg:mr-8 flex flex-col lg:flex-row  items-center justify-center">
-          <form method="post" action="#">
+          <form method="post" onSubmit={handleFormSubmit}>
             <div className="mb-8">
               <input
                 className="mt-1 p-2 w-full md:w-[250px] xl:w-[500px] rounded-[10px] border-b border-[#7042f861] text-white bg-transparent outline-none"
                 type="text"
                 placeholder="Your Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="mb-8">
@@ -55,6 +93,8 @@ const Contact = () => {
                 id="email"
                 type="email"
                 placeholder="Your Email"
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="mb-8">
@@ -64,6 +104,8 @@ const Contact = () => {
                 name="bio"
                 id="bio"
                 placeholder="What Serivce do you like "
+                onChange={handleChange}
+                required
               ></textarea>
             </div>
             <div className="font-light mb-5 z-10">
@@ -73,7 +115,12 @@ const Contact = () => {
                   className="Welcome-box py-[10px] px-[20px] border border-[#7042f88b] opacity-[0.9] cursor-pointer"
                 >
                   <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-                  <h1 className="Welcome-text text-[16px]">Submit</h1>
+                  <input className="Welcome-text text-[16px]"
+                    type="submit"
+                    placeholder="Submit"
+                    // disabled={!formData.name || !formData.email || !formData.bio} 
+                  />
+                  {/* <h1 className="Welcome-text text-[16px]">Submit</h1> */}
                 </motion.div>
               </a>
             </div>
