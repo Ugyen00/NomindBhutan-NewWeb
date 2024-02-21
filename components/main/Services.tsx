@@ -192,7 +192,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="mt-4">
+      {/* <div className="mt-4">
         <motion.div
           variants={slideInFromTop}
           className="text-[20px] sm:text-[40px] font-bold text-center text-white"
@@ -211,7 +211,7 @@ const Services = () => {
         <p className="text-gray-200 text-sm text-center ml-2 sm:ml-0 mb-8 before:sm:mb-16 md:mb-32">
           Nola will one day speak
         </p>
-      </div>
+      </div> */}
     </>
   );
 };

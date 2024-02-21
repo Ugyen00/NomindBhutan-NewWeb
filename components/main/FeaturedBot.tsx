@@ -80,7 +80,7 @@ const FeaturedBot = () => {
                 width: "370px",
                 height: "450px",
               }}
-              link="https://www.nlcs.gov.bt/"
+              link="https://web.nlcs.gov.bt/"
             />
           </div>
         </div>

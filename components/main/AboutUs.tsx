@@ -221,7 +221,7 @@ const AboutUs = () => {
                   Nima Wangdi
                 </p>
                 <p className="text-[16px] text-gray-400 md:pl-8">
-                  Head of Design
+                  Head of Design and Marketing
                 </p>
               </div>
             </div>

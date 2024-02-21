@@ -121,14 +121,14 @@ const Pricing = () => {
               {/* Yearly Plans */}
               <Cards
                 title="Basic Plan"
-                time="per year"
+                time="per month"
                 description="For small businesses with big ambitions"
                 features={[
-                  "1000 messages per month ",
+                  "500 messages per month ",
                   "Dashboard access",
                   "Chatbot interface setting access ",
                   "View conversation",
-                  "Live chat",
+                  "Booking System",
                 ]}
                 price="Nu.22,000"
                 cardStyles={{
@@ -138,13 +138,14 @@ const Pricing = () => {
               />
               <Cards
                 title="Enterprise Plan"
-                time="per year"
+                time="per month"
                 description="For serious businesses who want to scale"
                 features={[
                   "1000 messages per month ",
                   "Dashboard access",
                   "Chatbot interface setting access ",
                   "View conversation",
+                  "Booking System",
                   "Live chat",
                   "Remove Watermark",
                   "Insights/Analytics monthly",
