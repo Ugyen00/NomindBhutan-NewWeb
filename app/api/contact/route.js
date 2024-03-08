@@ -22,7 +22,7 @@ export async function POST(request){
         // }
         // sgMail.send(msg);
 
-        //nodemailer 
+        // nodemailer 
         await transporter.sendMail({
             ...mailOptions,
             subject:"Client Contact",

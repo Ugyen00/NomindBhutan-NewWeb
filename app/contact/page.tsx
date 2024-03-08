@@ -34,11 +34,13 @@ const Contact = () => {
   const [formData, setFormData] = useState(initialState);
   // const [touchedElement, setTouchedElement] = useState(initialTouchedElement);
 
-  const handleChange = (e:any) => setFormData((prev) => ({...prev,[e.target.name] : e.target.value}))
+  const handleChange = (e) => setFormData((prev) => ({...prev,[e.target.name] : e.target.value}))
   // const onBlur = (e) => setTouchedElement((prev) => ({...prev,[e.target.name]: true}));
   
-  const handleFormSubmit = async(e:any) => {
+  const handleFormSubmit = async(e) => {
     e.preventDefault();
+
+    console.log("here");
 
     // use isLoading for showing a loading effect
     setFormData((prev) => ({...prev,isLoading:true}))
@@ -74,7 +76,7 @@ const Contact = () => {
         </div>
 
         <div className="lg:ml-16 lg:mr-8 flex flex-col lg:flex-row  items-center justify-center">
-          <form method="post" onSubmit={handleFormSubmit}>
+          <form method="post" action="#" onSubmit={handleFormSubmit}>
             <div className="mb-8">
               <input
                 className="mt-1 p-2 w-full md:w-[250px] xl:w-[500px] rounded-[10px] border-b border-[#7042f861] text-white bg-transparent outline-none"
