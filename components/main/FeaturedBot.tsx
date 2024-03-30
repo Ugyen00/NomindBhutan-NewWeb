@@ -45,7 +45,7 @@ const FeaturedBot = () => {
             <Bots
               src="/BnbBot.svg"
               title="Bhutan National Bank"
-              description="Revolutionizing banking, our integrated chatbot at Bank of Bhutan delivers instant assistance, streamlines transactions, and enhances customer service seamlessly."
+              description="Revolutionizing banking, our integrated chatbot at Bank of Bhutan delivers instant assistance and enhances customer service seamlessly."
               width={300}
               height={300}
               imageStyles={{
