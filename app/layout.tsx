@@ -35,6 +35,7 @@ export default function RootLayout({
         <StarsCanvas />
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
         <Chatbot />
       </body>
