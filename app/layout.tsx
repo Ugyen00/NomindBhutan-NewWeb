@@ -5,6 +5,7 @@ import StarsCanvas from "@/components/main/StarBackground";
 import Footer from "@/components/main/Footer";
 import Navbar from "@/components/main/Navbar";
 import Chatbot from "@/components/main/Chatbot";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
